@@ -1,0 +1,50 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Index from '../views/Index.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'Index',
+    component: Index,
+    redirect:'index',
+    children:[
+      {
+        path: 'index',
+        component: () => import(/* webpackChunkName: "about" */ '../components/index.vue')
+      },
+      {
+        path: 'aboutHX',
+        component: () => import(/* webpackChunkName: "about" */ '../components/aboutHX.vue')
+      },
+      {
+        path: 'product',
+        component: () => import(/* webpackChunkName: "about" */ '../components/product.vue')
+      },
+      {
+        path: 'addHX',
+        name:'addHX',
+        component: () => import(/* webpackChunkName: "about" */ '../components/addHX.vue')
+      },
+      {
+        path: 'concatOus',
+        component: () => import(/* webpackChunkName: "about" */ '../components/concatOus.vue')
+      },
+
+    ]
+  },
+  {
+    path: '/test',
+    component: () => import(/* webpackChunkName: "about" */ '../components/test.vue')
+  }
+]
+
+const router = new VueRouter({
+  linkActiveClass:'active1',
+  base: process.env.BASE_URL,
+  routes
+})
+
+export default router
