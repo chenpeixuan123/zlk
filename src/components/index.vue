@@ -1,6 +1,7 @@
 <template>
   <div>
 <!--    展示轮播图-->
+<<<<<<< HEAD
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -67,6 +68,12 @@
         </el-col>
       </el-row>
     </div>
+=======
+      <div class="lunBo">
+        <img src="http://images.gshxkj.com.cn/index/index_bg.png" alt="">
+      </div>
+
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
       <div class="content">
         <div class="fwly">
           服务领域
@@ -250,7 +257,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   import Swiper from "swiper"
+=======
+
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
 export default {
   name: 'index',
   data(){
@@ -273,6 +284,7 @@ export default {
     }
   },
   mounted: function () {
+<<<<<<< HEAD
     var mySwiper = new Swiper('.swiper-container', {
       autoplay : 3000,
       loop : true,
@@ -281,6 +293,8 @@ export default {
       prevButton:'.swiper-button-prev',
       nextButton:'.swiper-button-next',
     })
+=======
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
     window.addEventListener('scroll', this.handleScroll, true);  // 监听（绑定）滚轮滚动事件
   },
   destroyed: function () {
@@ -291,6 +305,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+<<<<<<< HEAD
   @import "../../node_modules/swiper/dist/css/swiper.css";
   .ywfw{
     div{
@@ -312,6 +327,8 @@ export default {
   .swiper-container{
     height: 430px;
   }
+=======
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
   .ffly{
     .el-col{
       padding: 10px;
@@ -473,7 +490,13 @@ export default {
 
   .lunBo{
     width: 100%;
+<<<<<<< HEAD
     height: 100%;
+=======
+    img{
+      width: 100%;
+    }
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
   }
   .content{
     box-sizing: border-box;

@@ -1,5 +1,6 @@
 <template>
     <div class="aa">
+<<<<<<< HEAD
         <div class="kaicz_404 container">
             <img src="../assets/404.gif">
             <h2>抱歉，您访问的页面出错了</h2>
@@ -27,4 +28,38 @@
     .btn_blue{display:inline-block;height:56px;line-height:56px;text-align:center;border-radius:3px;background:#0052d0;color:#fff;letter-spacing:5px;border:0;font-size:18px;padding:0;text-decoration:none;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;-webkit-transition-property:background;transition-property:background}
     .kaicz_404 a{display:block;margin:auto;width:220px;height:56px}
 
+=======
+        <fieldset>
+            <legend style="margin-left: 10px">用户基本信息</legend>
+            <div>
+                <label for="">用户名</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">电子邮箱</label>
+                <input type="password">
+            </div>
+            <div>
+                <label for="">密 码</label>
+                <input type="password">
+            </div>
+            <div>
+                <label for="">确认密码</label>
+                <input type="password">
+            </div>
+        </fieldset>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "test"
+    }
+</script>
+
+<style scoped lang="scss">
+.aa{
+    padding:100px;
+}
+>>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
 </style>
