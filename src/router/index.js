@@ -1,14 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Index from '../views/Index.vue'
-
+// component: () => import(/* webpackChunkName: "about" */ '../views/Index.vue'),
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'Index',
-    component: Index,
+    component: () => import(/* webpackChunkName: "about" */ '../views/IndexV1.vue'),
     redirect:'index',
     children:[
       {
@@ -36,7 +35,7 @@ const routes = [
     ]
   },
   {
-    path: '/test',
+    path: '*',
     component: () => import(/* webpackChunkName: "about" */ '../components/test.vue')
   }
 ]

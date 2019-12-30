@@ -1,10 +1,72 @@
 <template>
   <div>
 <!--    展示轮播图-->
-      <div class="lunBo">
-        <img src="http://images.gshxkj.com.cn/index/index_bg.png" alt="">
-      </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/index_bg.png');background-size: 100% 100%">
 
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/index_bg.png');background-size: 100% 100%">
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/index_bg.png');background-size: 100% 100%">
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev swiper-button-white" style="margin-left: 15px;"></div>
+      <div class="swiper-button-next swiper-button-white" style="margin-right: 15px;"></div>
+    </div>
+
+<!--      业务范围-->
+    <div class="content">
+      <el-row>
+        <el-col :span="10">
+          <div class="cc_left">
+            <img src="@/assets/left.png" alt="">
+          </div>
+        </el-col>
+        <el-col :span="14">
+          <div>
+            <div class="fwly" style="width: 100%;">
+              业务范围
+            </div>
+            <el-row class="ywfw" :gutter="20">
+              <el-col :span="6">
+                <div>
+                  <img src="http://images.gshxkj.com.cn/index/bg2@2x.png" alt="">
+                  <p>金融软件开发</p>
+                </div>
+              </el-col>
+              <el-col :span="6">
+                <div>
+                  <img src="http://images.gshxkj.com.cn/index/bg2@2x.png" alt="">
+                  <p>金融IT技术服务</p>
+                </div>
+              </el-col>
+              <el-col :span="6">
+                <div>
+                  <img src="http://images.gshxkj.com.cn/index/bg2@2x.png" alt="">
+                  <p>政府机构信息化建设</p>
+                </div>
+              </el-col>
+              <el-col :span="6">
+                <div>
+                  <img src="http://images.gshxkj.com.cn/index/bg2@2x.png" alt="">
+                  <p>互联网平台建设运营</p>
+                </div>
+              </el-col>
+            </el-row>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
       <div class="content">
         <div class="fwly">
           服务领域
@@ -188,7 +250,7 @@
 </template>
 
 <script>
-
+  import Swiper from "swiper"
 export default {
   name: 'index',
   data(){
@@ -211,6 +273,14 @@ export default {
     }
   },
   mounted: function () {
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay : 3000,
+      loop : true,
+      effect : 'cube',
+      pagination : '.swiper-pagination',
+      prevButton:'.swiper-button-prev',
+      nextButton:'.swiper-button-next',
+    })
     window.addEventListener('scroll', this.handleScroll, true);  // 监听（绑定）滚轮滚动事件
   },
   destroyed: function () {
@@ -221,6 +291,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "../../node_modules/swiper/dist/css/swiper.css";
+  .ywfw{
+    div{
+      padding-top: 10px;
+      img{
+        width: 100%;
+      }
+      p{
+        color: blue;
+        text-align: center;
+      }
+    }
+  }
+  .cc_left{
+    img{
+      width: 100%;
+    }
+  }
+  .swiper-container{
+    height: 430px;
+  }
   .ffly{
     .el-col{
       padding: 10px;
@@ -382,9 +473,7 @@ export default {
 
   .lunBo{
     width: 100%;
-    img{
-      width: 100%;
-    }
+    height: 100%;
   }
   .content{
     box-sizing: border-box;
