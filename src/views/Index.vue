@@ -1,6 +1,5 @@
 <template>
   <div style="padding-top: 81px;">
-
     <div class="main">
       <div class="content">
         <el-row>
@@ -48,7 +47,7 @@
             <h2>联系我们</h2>
 
             <p @click="toAddress"><img src="http://images.gshxkj.com.cn/index/icon6.png" alt="" class="img_botton" ><span>地址:兰州市城关高新区南河北路高新大厦B座21A</span></p>
-            <p><img src="http://images.gshxkj.com.cn/index/icon7.png" alt="" class="img_botton"><span>电话:0931—8121096</span></p>
+            <p><img src="http://images.gshxkj.com.cn/index/icon7.png" alt="" class="img_botton"><span>电话:17361617371</span></p>
             <p><img src="http://images.gshxkj.com.cn/index/icon8.png" alt="" class="img_botton"><span>邮箱:huanxunkeji@gshxkj.com.cn</span></p>
           </el-col>
           <el-col :xs="24" :sm="6" style="margin: 0 auto;text-align: center;">
@@ -59,7 +58,7 @@
       </div>
     </div>
 
-    <div class="banquan">版权所有©甘肃环讯信息科技有限公司</div>
+    <div class="banquan"><span>©  2018-2020</span><span>甘肃环讯信息科技有限公司(<a href="http://gshxkj.com.cn" style="color: #fff;">gshxkj.com.cn</a>)</span><span>版权所有</span> <span>陇ICP备<a href="http://beian.miit.gov.cn" style="color: #fff;">19001769</a>号-1</span> <span></span></div>
 
 
 
@@ -134,6 +133,9 @@
     color: #F6F6F6;
     background: #0066CC;
     padding: 18px 0;
+    span{
+      padding-right: 10px;
+    }
   }
   .footMain{
     img{

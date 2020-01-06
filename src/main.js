@@ -7,10 +7,7 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'element-ui/lib/theme-chalk/display.css';
 import animate from 'animate.css'
-<<<<<<< HEAD
 
-=======
->>>>>>> 805671e1815e6d85c50a83c4f8708a7b0fdd1122
 Vue.use(animate);
 
 Vue.config.productionTip = false
