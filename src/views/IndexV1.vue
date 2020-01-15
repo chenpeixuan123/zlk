@@ -1,5 +1,5 @@
 <template>
-    <div style="padding-top: 81px;">
+    <div style="padding-top: 60px;">
 
         <div class="main">
             <div class="content">
@@ -9,27 +9,29 @@
                     </el-col>
                     <el-col :span="20" >
                         <ul class="headerTab">
-                            <router-link :to="{ path: '/index' }" tag="li" exact><span @click="showZheZhao=false">首页</span></router-link>
-                            <router-link :to="{ path: '/aboutHX',query:{num:1}}" tag="li" ><span @mouseenter="showZheZhao=true">关于环讯</span></router-link>
-                            <router-link :to="{ path: '/product' }" tag="li" ><span @click="showZheZhao=false">产品介绍</span></router-link>
-                            <router-link :to="{ path: '/addHX' }" tag="li" ><span @click="showZheZhao=false">加入环讯</span></router-link>
-                            <router-link :to="{ path: '/concatOus' }" tag="li" ><span style="border: none;" @click="showZheZhao=false">联系我们</span></router-link>
+                            <router-link :to="{ path: '/index' }" tag="li" exact @mouseenter.native="showZheZhao=false"><span >首页</span></router-link>
+                            <router-link :to="{ path: '/aboutHX',query:{num:1}}" tag="li"  @mouseenter.native="showZheZhao=true" ><span>关于环讯</span></router-link>
+                            <router-link :to="{ path: '/product' }" tag="li" @mouseenter.native="showZheZhao=false"><span >产品介绍</span></router-link>
+                            <router-link :to="{ path: '/addHX' }" tag="li" ><span >加入环讯</span></router-link>
+                            <router-link :to="{ path: '/concatOus' }" tag="li" ><span style="border: none;" >联系我们</span></router-link>
                         </ul>
                     </el-col>
                 </el-row>
             </div>
 
-                <div class="zhezhao" v-show="showZheZhao">
+                <div class="zhezhao" v-show="showZheZhao" @mouseleave="showZheZhao=false">
                     <el-collapse-transition>
                         <div class="content secondNav"  v-show="showZheZhao" >
-                            <div class="c_gyhx" @mouseleave="showZheZhao=false">
-                                <router-link :to="{ path: '/aboutHX',query:{num:1} }" tag="div" @click.native="showZheZhao=false">公司简介</router-link>
-                                <router-link :to="{ path: '/aboutHX',query:{num:2} }" tag="div" @click.native="showZheZhao=false">公司使命</router-link>
-                                <router-link :to="{ path: '/aboutHX',query:{num:3} }" tag="div" @click.native="showZheZhao=false">公司发展战略</router-link>
-<!--                            </div>-->
-<!--                            <div class="c_gyhx" @mouseleave="showZheZhao=false">-->
-                                <router-link :to="{ path: '/aboutHX',query:{num:4} }" tag="div" @click.native="showZheZhao=false">公司资质</router-link>
-                                <router-link :to="{ path: '/aboutHX',query:{num:5} }" tag="div" @click.native="showZheZhao=false">合作伙伴</router-link>
+                            <div @mouseleave="showZheZhao=false">
+                                <div class="c_gyhx" >
+                                    <router-link :to="{ path: '/aboutHX',query:{num:1} }" tag="div" @click.native="showZheZhao=false">公司简介</router-link>
+                                    <router-link :to="{ path: '/aboutHX',query:{num:2} }" tag="div" @click.native="showZheZhao=false">公司使命</router-link>
+                                    <router-link :to="{ path: '/aboutHX',query:{num:3} }" tag="div" @click.native="showZheZhao=false">公司发展战略</router-link>
+                                </div>
+                                <div class="c_gyhx" >
+                                    <router-link :to="{ path: '/aboutHX',query:{num:4} }" tag="div" @click.native="showZheZhao=false">公司资质</router-link>
+                                    <router-link :to="{ path: '/aboutHX',query:{num:5} }" tag="div" @click.native="showZheZhao=false">合作伙伴</router-link>
+                                </div>
                             </div>
                         </div>
                     </el-collapse-transition>
@@ -105,22 +107,29 @@
         }
     }
     .zhezhao{
-        background: rgba(0,0,0,.3);
-        height: 130px;
+        background: rgba(5,14,187,.1);
+        height: 124px;
         .secondNav{
             .c_gyhx{
+                width: 130px;
                 float: left;
                 color: #fff;
                 &:first-child{
-                    margin-left: 725px;
+                    margin-left: 710px;
+                    padding-left: 15px;
                 }
-                /*&:last-child{*/
-                /*    margin-left: 40px;*/
-                /*}*/
+                &:last-child{
+                    /*padding-left: 40px;*/
+                }
+                overflow: hidden;
+                padding-top: 5px;
                 div{
-                    font-size: 13px;
-                    padding: 4px 0;
+                    font-size: 15px;
+                    padding: 9px 0;
                     cursor: pointer;
+                    &:hover{
+                        color: #FCE302;
+                    }
                 }
             }
         }
@@ -143,11 +152,15 @@
         margin: 0 10px 0 0!important;
     }
     .banquan{
+        max-width: 1920px;
+        margin: 0 auto;
         text-align: center;
         font-size: 13px;
         color: #F6F6F6;
         background: #0066CC;
         padding: 18px 0;
+        position: relative;
+        z-index: 9999;
         span{
             padding-right: 10px;
         }
@@ -176,7 +189,7 @@
     .main{
         background: #fff;
         width: 100%;
-        height: 81px;
+        height: 60px;
         position: fixed;
         top: 0;
         z-index: 5;
@@ -184,23 +197,22 @@
             width: 1196px;
             margin: 0 auto;
             img{
-
-                margin-top: 16px;
+                margin-top: 6px;
             }
             ul{
                 width: 100%;
-                height: 81px;
+                height: 60px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 flex-wrap: nowrap;
                 li{
                     box-sizing: border-box;
-                    color: #6E6E6E;
+                    color: #000;
                     cursor: pointer;
                     font-size: 18px;
-                    height: 80px;
-                    line-height: 80px;
+                    height: 60px;
+                    line-height: 60px;
                     span{
                         padding: 0 30px;
                         border-right: 1px solid #999;

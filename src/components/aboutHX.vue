@@ -10,7 +10,7 @@
                 <el-col :span="7">
                     <div >
                         <span style="opacity: 0">123</span>
-                        <ul class="left" id="div1" style="margin-top: -19px;z-index: 1;">
+                        <ul class="left" id="div1" style="margin-top: -20px;z-index: 1;">
                             <div>
                                 关于环讯
                             </div>
@@ -230,7 +230,7 @@
             return{
                 index:1,
                 msg:'公司简介',
-                height:window.screen.height-250,
+                height:window.screen.height-200,
                 srcList: [
                     'http://images.gshxkj.com.cn/aboutHX/hx1.jpg',
                     'http://images.gshxkj.com.cn/aboutHX/hx2.jpg',
@@ -275,9 +275,11 @@
                 const that=this;
                 function htmlScroll() {
                     var top = document.body.scrollTop || document.documentElement.scrollTop;
-                    if (that.$refs.element.offsetHeight < top ) {
+                    console.log(that.$refs.element.offsetHeight,top+4)
+                    if (that.$refs.element.offsetHeight <= top+5) {
+
                         elFix.style.position = 'fixed';
-                        elFix.style.top = '100px';
+                        elFix.style.top = '80px';
                         elFix.style.width = '300px';
 
                     }

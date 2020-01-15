@@ -3,43 +3,43 @@
 <!--    展示轮播图-->
     <div class="swiper-container" id="swiper1">
         <ul>
-            <li :class="indexLunBo==0?'activeLunBo':''" @click="tabLunBo(0)">服务领域 <span v-show="indexLunBo==0"></span></li>
-            <li :class="indexLunBo==1?'activeLunBo':''" @click="tabLunBo(1)">服务网络 <span v-show="indexLunBo==1"></span></li>
-            <li :class="indexLunBo==2?'activeLunBo':''" @click="tabLunBo(2)">我们的优势 <span v-show="indexLunBo==2"></span></li>
-            <li :class="indexLunBo==3?'activeLunBo':''" @click="tabLunBo(3)">成功案例 <span v-show="indexLunBo==3"></span></li>
+            <li :class="indexLunBo==0?'activeLunBo':''" @mouseenter="tabLunBo(0)">服务领域 <span v-show="indexLunBo==0"></span></li>
+            <li :class="indexLunBo==1?'activeLunBo':''" @mouseenter="tabLunBo(1)">服务网络 <span v-show="indexLunBo==1"></span></li>
+            <li :class="indexLunBo==2?'activeLunBo':''" @mouseenter="tabLunBo(2)">我们的优势 <span v-show="indexLunBo==2"></span></li>
+            <li :class="indexLunBo==3?'activeLunBo':''" @mouseenter="tabLunBo(3)">成功案例 <span v-show="indexLunBo==3"></span></li>
         </ul>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner1.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner1.jpg');">
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner2.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner2.jpg');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner3.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner3.jpg');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner4.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner4.jpg');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner5.png');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner5.png');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner6.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner6.jpg');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner7.jpg');background-size: 100% 100%">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner7.jpg');">
 
           </div>
         </div>
@@ -250,6 +250,7 @@ export default {
     background-image: url("http://images.gshxkj.com.cn/index/fwwl_bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding:10px 0;
     div{
         display: flex;
         .fwwl_left{
@@ -332,7 +333,10 @@ export default {
     }
   }
   .swiper-container{
+
       position: relative;
+      height: 500px;
+
       ul{
           position: absolute;
           z-index: 9999;
@@ -369,7 +373,7 @@ export default {
           }
           z-index: 9999;
       }
-    height: 390px;
+
   }
 
   .evenyList{
@@ -397,12 +401,11 @@ export default {
   .lunBo{
     width: 100%;
     height: 100%;
+    background-position:center;
+    background-repeat:no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img{
-      width: 100%;
-    }
     h1{
       color: #FBFCFD;
       font-size: 40px;

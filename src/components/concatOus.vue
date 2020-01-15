@@ -167,9 +167,9 @@
                 const that=this;
                 function htmlScroll1() {
                     var top = document.body.scrollTop || document.documentElement.scrollTop;
-                    if (that.$refs.element.offsetHeight < top ) {
+                    if (that.$refs.element.offsetHeight < top+4 ) {
                         elFix.style.position = 'fixed';
-                        elFix.style.top = '100px';
+                        elFix.style.top = '80px';
                         elFix.style.width = '300px';
 
                     }

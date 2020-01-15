@@ -20,6 +20,7 @@ const routes = [
       },
       {
         path: 'product',
+        name:'product',
         component: () => import(/* webpackChunkName: "about" */ '../components/product.vue')
       },
       {

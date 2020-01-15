@@ -3,13 +3,13 @@
         <div class="swiper-father">
             <div class="swiper-container" id="aa">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" v-for="item in tabList">
+                    <div class="swiper-slide" v-for="(item,index) in tabList">
                         <img :src="item.url" alt="">
                         <p>{{item.msg}}</p>
-                        <div>
+                        <router-link :to="{ name: 'product',params:{num:index+1} }" tag="div" style="cursor:pointer;">
                             <span>查看详情</span>
                             <img src="http://images.gshxkj.com.cn/index/toRight.png" alt="">
-                        </div>
+                        </router-link>
                     </div>
                 </div>
             </div>

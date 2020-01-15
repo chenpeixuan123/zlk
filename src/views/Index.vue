@@ -7,7 +7,7 @@
             <img src="http://images.gshxkj.com.cn/index/hx_logo.png" alt="">
           </el-col>
           <el-col :span="20" >
-            <ul >
+            <ul>
               <router-link :to="{ path: '/index' }" tag="li" exact>首页</router-link>
               <router-link :to="{ path: '/aboutHX',query:{num:1}}" tag="li" >关于环讯</router-link>
               <router-link :to="{ path: '/product' }" tag="li" >产品介绍</router-link>
