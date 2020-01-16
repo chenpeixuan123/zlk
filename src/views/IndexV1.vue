@@ -1,10 +1,13 @@
 <template>
-    <div style="padding-top: 60px;">
+    <div style="padding-top: 70px;">
 
-        <div class="main">
-            <div class="content">
+        <div class="main" >
+<!--           shxkj.com.cn/index/topbj.png');background-position: top center;background-repeat: no-repeat;background-size: 2800px 80px;"-->
+
+            <div class="content" style="height: 70px;">
                 <el-row>
-                    <el-col :span="4">
+                    <el-col :span="4" style="height: 60px;">
+                        <img src="http://images.gshxkj.com.cn/index/topbj.png" alt="">
                         <img src="http://images.gshxkj.com.cn/index/logo.png" alt="">
                     </el-col>
                     <el-col :span="20" >
@@ -109,11 +112,13 @@
     .zhezhao{
         background: rgba(5,14,187,.1);
         height: 124px;
+        position: relative;
         .secondNav{
             .c_gyhx{
                 width: 130px;
                 float: left;
                 color: #fff;
+                padding-top: 4px;
                 &:first-child{
                     margin-left: 710px;
                     padding-left: 15px;
@@ -122,7 +127,7 @@
                     /*padding-left: 40px;*/
                 }
                 overflow: hidden;
-                padding-top: 5px;
+
                 div{
                     font-size: 15px;
                     padding: 9px 0;
@@ -157,12 +162,15 @@
         text-align: center;
         font-size: 13px;
         color: #F6F6F6;
-        background: #0066CC;
+        background: #929292;
         padding: 18px 0;
         position: relative;
         z-index: 9999;
         span{
             padding-right: 10px;
+        }
+        a{
+            text-decoration: none;
         }
     }
     .footMain{
@@ -189,19 +197,31 @@
     .main{
         background: #fff;
         width: 100%;
-        height: 60px;
+        height: 70px;
         position: fixed;
         top: 0;
         z-index: 5;
         .content{
             width: 1196px;
             margin: 0 auto;
-            img{
-                margin-top: 6px;
+            img:first-of-type{
+                width: 550px;
+                height: 87px;
+                position: relative;
+                left: -365px;
+                top:0;
+                z-index: 6;
+            }
+            img:last-of-type{
+                /*width: 100px;*/
+                position: relative;
+                top: -70px;
+                left: 20px;
+                z-index: 7;
             }
             ul{
                 width: 100%;
-                height: 60px;
+                height: 70px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -211,8 +231,8 @@
                     color: #000;
                     cursor: pointer;
                     font-size: 18px;
-                    height: 60px;
-                    line-height: 60px;
+                    height: 70px;
+                    line-height: 70px;
                     span{
                         padding: 0 30px;
                         border-right: 1px solid #999;

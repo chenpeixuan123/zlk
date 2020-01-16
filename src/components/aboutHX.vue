@@ -2,7 +2,7 @@
     <div >
         <!--    展示轮播图-->
         <div class="lunBo" ref="element" >
-            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" >
+<!--            <img src="" >-->
         </div>
 
         <div class="content" >
@@ -10,7 +10,7 @@
                 <el-col :span="7">
                     <div >
                         <span style="opacity: 0">123</span>
-                        <ul class="left" id="div1" style="margin-top: -20px;z-index: 1;">
+                        <ul class="left" id="div1" style="margin-top: -15px;z-index: 1;">
                             <div>
                                 关于环讯
                             </div>
@@ -249,13 +249,14 @@
             }
         },
         watch: {
-            '$route' () {
+            '$route'() {
                 this.index=this.$route.query.num;
                 document.body.scrollTop=0;
                 document.documentElement.scrollTop=0;
             }
         },
         mounted(){
+            this.index=this.$route.query.num||1;
             document.body.scrollTop=0;
             document.documentElement.scrollTop=0;
             this.scrollTab()
@@ -275,11 +276,10 @@
                 const that=this;
                 function htmlScroll() {
                     var top = document.body.scrollTop || document.documentElement.scrollTop;
-                    console.log(that.$refs.element.offsetHeight,top+4)
-                    if (that.$refs.element.offsetHeight <= top+5) {
+                    if (that.$refs.element.offsetHeight <= top) {
 
                         elFix.style.position = 'fixed';
-                        elFix.style.top = '80px';
+                        elFix.style.top = '75px';
                         elFix.style.width = '300px';
 
                     }
@@ -401,10 +401,11 @@
         }
     }
     .lunBo{
-        img{
-            width: 100%;
-            height: 100%;
-        }
+        height: 392px;
+        margin: 0 auto;
+        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .content{
         width: 1196px;

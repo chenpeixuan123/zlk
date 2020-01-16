@@ -37,14 +37,14 @@
                         <li @click="tab(1,'从事行业')" :class="index==1?'active1':''"><span>从事行业</span> <i :class="index==1?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <li @click="tab(2,'成功案例')" :class="index==2?'active1':''"><span>成功案例</span> <i :class="index==2?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <ul v-show="index==2">
-                            <li @click="tabSuccess(1)" :class="indexSuccess==1?'active3':''"><span>住宅维修基金云管理平台</span></li>
-                            <li @click="tabSuccess(2)" :class="indexSuccess==2?'active3':''"><span>陇银资本互联网平台</span></li>
-                            <li @click="tabSuccess(3)" :class="indexSuccess==3?'active3':''"><span>惠民云服务平台</span></li>
-                            <li @click="tabSuccess(4)" :class="indexSuccess==4?'active3':''"><span>豪马驾校后台云管理系统</span></li>
-                            <li @click="tabSuccess(5)" :class="indexSuccess==5?'active3':''"><span>智慧社区</span></li>
-                            <li @click="tabSuccess(6)" :class="indexSuccess==6?'active3':''"><span>农民工工资保证金监管平台</span></li>
-                            <li @click="tabSuccess(7)" :class="indexSuccess==7?'active3':''"><span>服刑人员个人资金及消费管理系统</span></li>
-                            <li @click="tabSuccess(8)" :class="indexSuccess==8?'active3':''"><span>运营甘肃省中小企业公共服务平台</span></li>
+                            <li @mouseenter="tabSuccess(1)" :class="indexSuccess==1?'active3':''"><span>住宅维修基金云管理平台</span></li>
+                            <li @mouseenter="tabSuccess(2)" :class="indexSuccess==2?'active3':''"><span>陇银资本互联网平台</span></li>
+                            <li @mouseenter="tabSuccess(3)" :class="indexSuccess==3?'active3':''"><span>惠民云服务平台</span></li>
+                            <li @mouseenter="tabSuccess(4)" :class="indexSuccess==4?'active3':''"><span>豪马驾校后台云管理系统</span></li>
+                            <li @mouseenter="tabSuccess(5)" :class="indexSuccess==5?'active3':''"><span>智慧社区</span></li>
+                            <li @mouseenter="tabSuccess(6)" :class="indexSuccess==6?'active3':''"><span>农民工工资保证金监管平台</span></li>
+                            <li @mouseenter="tabSuccess(7)" :class="indexSuccess==7?'active3':''"><span>服刑人员个人资金及消费管理系统</span></li>
+                            <li @mouseenter="tabSuccess(8)" :class="indexSuccess==8?'active3':''"><span>运营甘肃省中小企业公共服务平台</span></li>
                         </ul>
                     </ul>
                 </el-col>
@@ -283,7 +283,9 @@
 <style scoped lang="scss">
 .lunboImg{
     overflow: hidden;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     h2{
@@ -310,7 +312,8 @@
     background-image: url('http://images.gshxkj.com.cn/product/pro3.png');
 }
     .success{
-        div{
+        &>div{
+
             h5{
                 font-size: 15px;
                 line-height: 30px;

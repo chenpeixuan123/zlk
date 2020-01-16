@@ -28,11 +28,11 @@
 
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner5.png');">
+<!--        <div class="swiper-slide">-->
+<!--          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner5.png');">-->
 
-          </div>
-        </div>
+<!--          </div>-->
+<!--        </div>-->
         <div class="swiper-slide">
           <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner6.jpg');">
 

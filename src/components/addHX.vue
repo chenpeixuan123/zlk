@@ -2,14 +2,14 @@
     <div>
         <!--    展示轮播图-->
         <div class="lunBo" ref="element">
-            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" alt="">
+<!--            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" alt="">-->
         </div>
 
         <div class="content">
             <el-row>
                 <el-col :span="7">
                     <span style="opacity: 0">123</span>
-                    <ul class="left" id="div3" style="margin-top: -19px;z-index: 2;">
+                    <ul class="left" id="div3" style="margin-top: -15px;z-index: 2;">
                         <div>
                             加入环讯
                         </div>
@@ -378,9 +378,9 @@
                 const that=this;
                 function htmlScroll1() {
                     var top = document.body.scrollTop || document.documentElement.scrollTop;
-                    if (that.$refs.element.offsetHeight < top+4 ) {
+                    if (that.$refs.element.offsetHeight < top ) {
                         elFix.style.position = 'fixed';
-                        elFix.style.top = '79px';
+                        elFix.style.top = '75px';
                         elFix.style.width = '300px';
 
                     }
@@ -623,10 +623,11 @@
         }
     }
     .lunBo{
-        img{
-            width: 100%;
-            height: 100%;
-        }
+        height: 392px;
+        margin: 0 auto;
+        background-image: url("http://images.gshxkj.com.cn/index/banner5.png");
+        background-repeat: no-repeat;
+        background-position: center -38px;
     }
     .content{
         width: 1196px;
@@ -645,7 +646,7 @@
         div{
             width: 100%;
             top: -126px;
-            background:  RGBA(114, 156, 173, 0.5);
+            background:  RGBA(114, 156, 173, 0.3);
             position: absolute;
             height: 126px;
             line-height: 126px;
