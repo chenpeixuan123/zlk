@@ -65,7 +65,7 @@
             <div class="fwly" style="width: 100%;">
               业务范围
             </div>
-            <el-row class="ywfw" :gutter="20">
+            <el-row class="ywfw" >
               <el-col :span="6">
                 <div>
                   <div class="ywfw_every">
@@ -79,7 +79,7 @@
                   <div class="ywfw_every">
                     <img src="http://images.gshxkj.com.cn/index/ywfw2.png" alt="">
                   </div>
-                  <p>司法行业生卫服务</p>
+                  <p>司法行业智慧生卫服务</p>
                 </div>
               </el-col>
               <el-col :span="6">
