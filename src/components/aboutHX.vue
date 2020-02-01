@@ -65,7 +65,24 @@
                     <div class="main" v-show="index==4">
 <!--                        <p>为了壮大公司实力，提高公司知名度，积极响应政府对高新技术企业的支持，我公司目前正在进行软著、双软企业、CMMI3等一系列的资质认证。目前软著、CMMI3认证已经下证；其它认证也已经拟定好时间表和工作计划表。</p>-->
                         <p>公司已通过国际CMMI3认证、ISO9001认证、ISO27001认证，公共安全业务连续性管理体系认证。</p>
-<!--                        <h4 class="gsrzTitle">公司软著</h4>-->
+<!--                        <h4 class="gsrzTitle" style="padding-left: 324px;font-size: 20px;">CMMI3认证</h4>-->
+<!--                        <el-row :gutter="20" class="cmmi">-->
+<!--                            <el-col :span="17">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[6]"-->
+<!--                                            :preview-src-list="srcList" style="margin-left: 150px;">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--&lt;!&ndash;                            <el-col :span="7">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="cmmiTwo">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <img src="http://images.gshxkj.com.cn/aboutHX/cup.png" alt="">&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </el-col>&ndash;&gt;-->
+<!--                        </el-row>-->
+
+<!--                        <h4 class="gsrzTitle">ISO9001认证</h4>-->
 <!--                        <el-row :gutter="20" class="gsrz">-->
 <!--                            <el-col :span="6">-->
 <!--                                <div>-->
@@ -83,6 +100,11 @@
 <!--                                    </el-image>-->
 <!--                                </div>-->
 <!--                            </el-col>-->
+
+
+<!--                        </el-row>-->
+<!--                        <h4 class="gsrzTitle" style="margin-top: 10px">ISO27001认证</h4>-->
+<!--                        <el-row :gutter="20" class="gsrz">-->
 <!--                            <el-col :span="6">-->
 <!--                                <div>-->
 <!--                                    <el-image-->
@@ -115,71 +137,46 @@
 <!--                                    </el-image>-->
 <!--                                </div>-->
 <!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[6]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[7]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[8]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[9]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[10]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[11]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
+
 <!--                        </el-row>-->
-                        <h4 class="gsrzTitle" style="padding-left: 324px;font-size: 20px;">CMMI3认证</h4>
-                        <el-row :gutter="20" class="cmmi">
-                            <el-col :span="17">
-                                <div>
-                                    <el-image
-                                            :src="srcList[0]"
-                                            :preview-src-list="srcList" style="margin-left: 150px;">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="7">
-                                <div class="cmmiTwo">
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/cup.png" alt="">
-                                </div>
-                            </el-col>
-                        </el-row>
+
+
+<!--                        资质展示改为轮播图-->
+                        <template>
+                            <el-carousel style="margin-bottom: 30px;" :interval="3000" type="card" height="330px" indicator-position="none">
+                                <el-carousel-item >
+                                    <div class="zizhiL">
+                                        <div>
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO90011.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO90012.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </el-carousel-item>
+                                <el-carousel-item >
+                                    <div class="zizhiL">
+                                        <div>
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270011.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270012.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </el-carousel-item>
+                                <el-carousel-item >
+                                    <div class="zizhiL">
+                                        <div>
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270013.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270014.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </el-carousel-item>
+                                <el-carousel-item >
+                                    <div class="zizhiL">
+                                        <div>
+                                            <img src="http://images.gshxkj.com.cn/aboutHX/cmmi.png" alt="" style="width: 100%">
+                                        </div>
+                                    </div>
+                                </el-carousel-item>
+                            </el-carousel>
+                        </template>
                     </div>
 <!--                        合作伙伴-->
                     <div class="main" v-show="index==5" style="min-height: 600px;">
@@ -257,12 +254,12 @@
                 msg:'公司简介',
                 height:window.screen.height-200,
                 srcList: [
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx1.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx2.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx3.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx4.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx5.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx6.jpg',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO90011.png',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO90012.png',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO270011.jpg',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO270012.jpg',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO270013.jpg',
+                    'http://images.gshxkj.com.cn/aboutHX/ISO270014.jpg',
                     // 'http://images.gshxkj.com.cn/aboutHX/hx7.jpg',
                     // 'http://images.gshxkj.com.cn/aboutHX/hx8.jpg',
                     // 'http://images.gshxkj.com.cn/aboutHX/hx9.jpg',
@@ -348,6 +345,24 @@
 </script>
 
 <style scoped lang="scss">
+    .zizhiL{
+        height: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        div{
+            display: flex;
+            box-sizing: border-box;
+            padding: 10px;
+            height: 100%;
+            border: 1px solid #D1D1D1;
+            border-radius: 5px;
+            img{
+                width: 50%;
+            }
+        }
+    }
+
+
     .sft{
         width: 30%!important;
     }
@@ -428,7 +443,7 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");
+        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.jpg");
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -450,7 +465,7 @@
         div{
             width: 100%;
             top: -126px;
-            background:  RGBA(114, 156, 173, 0.5);
+            background:  RGBA(114, 156, 173, 0.3);
             position: absolute;
             height: 126px;
             line-height: 126px;

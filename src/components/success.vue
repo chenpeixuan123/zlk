@@ -6,9 +6,9 @@
                     <div class="swiper-slide" v-for="(item,index) in tabList">
                         <img :src="item.url" alt="">
                         <p>{{item.msg}}</p>
-                        <router-link :to="{ name: 'product',params:{num:index+1} }" tag="div" style="cursor:pointer;">
+                        <router-link :to="item.noTo!=1?{ name: 'product',params:{num:index+1} }:''" tag="div" style="cursor:pointer;">
                             <span>查看详情</span>
-                            <img src="http://images.gshxkj.com.cn/index/toRight.png" alt="">
+<!--                            <img src="http://images.gshxkj.com.cn/index/toRight.png" alt="">-->
                         </router-link>
                     </div>
                 </div>
@@ -27,37 +27,30 @@
             return{
                 tabList:[
                     {
+                        url:'http://images.gshxkj.com.cn/index/success4.jpg',
+                        msg:'环讯数据可视化系统'
+                    },
+                    {
+                        url:'http://images.gshxkj.com.cn/index/success2.jpg',
+                        msg:'薪酬管理系统'
+                    },
+                    {
                         url:'http://images.gshxkj.com.cn/index/success1.png',
-                        msg:'住宅维修基金云管理平台'
+                        msg:'住宅维修资金云管理平台'
+                    },
+                    {
+                        url:'http://images.gshxkj.com.cn/index/success3.jpg',
+                        msg:'“惠民”云服务平台'
                     },
                     {
                         url:'http://images.gshxkj.com.cn/index/success2.png',
                         msg:'陇银资本互联网平台'
                     },
                     {
-                        url:'http://images.gshxkj.com.cn/index/success3.png',
-                        msg:'惠民云服务平台'
+                        url:'http://images.gshxkj.com.cn/index/success5.jpg',
+                        msg:'运营甘肃省中小企业公共服务平台',
+                        noTo:1
                     },
-                    {
-                        url:'http://images.gshxkj.com.cn/index/success4.png',
-                        msg:'智慧驾校平台'
-                    },
-                    {
-                        url:'http://images.gshxkj.com.cn/index/success1.png',
-                        msg:'智慧社区'
-                    },
-                    {
-                        url:'http://images.gshxkj.com.cn/index/success2.png',
-                        msg:'农民工工资保证金监管平台'
-                    },
-                    {
-                        url:'http://images.gshxkj.com.cn/index/success3.png',
-                        msg:'服刑人员个人资金及消费管理系统'
-                    },
-                    {
-                        url:'http://images.gshxkj.com.cn/index/success4.png',
-                        msg:'运营甘肃省中小企业公共服务平台'
-                    }
                 ]
             }
         },

@@ -18,7 +18,7 @@
                 </el-carousel-item>
                 <el-carousel-item >
                     <div class="lunboImg bg3" >
-                        <h2 style="color: #fff;">农民工工资保证金监管平台</h2>
+                        <h2 style="color: #fff;">“惠民”云服务平台</h2>
                         <p><span style="background: #FFFFCC;color: #336699;">专项存储 / 分项计息 / 专项支取</span></p>
                     </div>
                 </el-carousel-item>
@@ -34,7 +34,7 @@
                         <div>
                             产品介绍
                         </div>
-                        <li @click="tab(1,'从事行业')" :class="index==1?'active1':''"><span>从事行业</span> <i :class="index==1?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
+
                         <li @click="tab(2,'成功案例')" :class="index==2?'active1':''"><span>成功案例</span> <i :class="index==2?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <ul v-show="showOrFalse">
 
@@ -53,6 +53,7 @@
 <!--                            <li @mouseenter="tabSuccess(7)" :class="indexSuccess==7?'active3':''"><span>服刑人员个人资金及消费管理系统</span></li>-->
 <!--                            <li @mouseenter="tabSuccess(8)" :class="indexSuccess==8?'active3':''"><span>运营甘肃省中小企业公共服务平台</span></li>-->
                         </ul>
+                        <li @click="tab(1,'从事行业')" :class="index==1?'active1':''"><span>从事行业</span> <i :class="index==1?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <li style="margin-top: 2px" @click="tab(3,'技术服务')" :class="index==3?'active1':''"><span>技术服务</span> <i :class="index==3?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <li style="margin-top: 2px" @click="tab(4,'重点项目')" :class="index==4?'active1':''"><span>重点项目</span> <i :class="index==4?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
 
@@ -127,19 +128,19 @@
                         </div>
                         <div v-show="indexSuccess==2">
                             <h3>薪酬管理系统</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list2.png" alt="">
+                            <img src="http://images.gshxkj.com.cn/product/list2.jpg" alt="">
                             <p>基于银行薪酬管理业务的现状和痛点，甘肃环讯定制化开发薪酬管理系统。主要功能包括：组织机构管理、人事管理、考勤管理、审批中心(基于Activity工作流)、自动算薪、BI数据报表及分析、个性化薪资核算配置等，为客户提供了方便、准确、稳定的HR工作平台。</p>
                         </div>
                         <div v-show="indexSuccess==3">
                             <h3>住宅维修资金云管理平台 </h3>
-                            <img src="http://images.gshxkj.com.cn/product/list1.png" alt="">
+                            <img src="http://images.gshxkj.com.cn/product/list9.png" alt="">
                             <p>
                                 针对我省各级房管局单位住宅维修资金管理现状，根据政府出台的住宅维修资金管理制度，结合银行专业、规范的账务处理机制，甘肃环讯研发推出住房维修资金管理云平台。该平台接入房管局、业主、开发商及物业公司等多应用场景，采用金融IT业先进的F5集群技术，为用户提供持续、快速、稳定的线上服务，为维修资金管理提供清晰、简洁的财务数据、丰富的统计报表，规范并简化维修资金的管理流程，从而既保障业主的计息权益，又大大提高了工作效率。
                             </p>
                         </div>
                         <div v-show="indexSuccess==4">
                             <h3>“惠民”云服务平台</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list3.png" alt="">
+                            <img src="http://images.gshxkj.com.cn/product/list3.jpg" alt="">
                             <p>经调研，现阶段广大居民普遍存在生活缴费难、管理难问题。以便民、惠民为服务宗旨，甘肃环讯推出“惠民”云服务平台。收费单位可通过该平台实现对所有缴费用户统一管理，对收缴 情况一目了然。
                                 该平台加入了shiro权限框架，以防止多角色、多用户都越权问题；采用https协议保证数据安全性，通过互联网支付完成二级清分。该平台具有开放性、便捷性、延展性，能快速融入百姓日常生活，为群众提供定制化、差异化、个性化服务。广大居民可通过“惠民”云服务平台足不出户轻松缴费。</p>
                         </div>
@@ -271,8 +272,8 @@
         name: "aboutHX",
         data(){
             return{
-                index:1,
-                msg:'从事行业',
+                index:2,
+                msg:'成功案例',
                 indexSuccess:0,
                 showOrFalse:false
             }
@@ -281,6 +282,7 @@
             if(this.$route.params.num){//1~8
                 this.index=2;
                 this.indexSuccess=this.$route.params.num;
+                this.showOrFalse=true;
             }
             document.body.scrollTop=0;
             document.documentElement.scrollTop=0;
@@ -513,7 +515,7 @@
         div{
             width: 100%;
             top: -126px;
-            background:  RGBA(114, 156, 173, 0.5);
+            background:  RGBA(114, 156, 173, 0.3);
             position: absolute;
             height: 126px;
             line-height: 126px;

@@ -476,7 +476,7 @@
         div{
             width: 100%;
             top: -126px;
-            background:  RGBA(114, 156, 173, 0.5);
+            background:  RGBA(114, 156, 173, 0.3);
             position: absolute;
             height: 126px;
             line-height: 126px;

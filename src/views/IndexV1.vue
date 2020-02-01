@@ -165,7 +165,7 @@
         background: #929292;
         padding: 18px 0;
         position: relative;
-        z-index: 9999;
+        z-index: 1;
         span{
             padding-right: 10px;
         }

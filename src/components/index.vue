@@ -124,7 +124,7 @@
           <el-col :span="6">
             <div style="background-image: url('http://images.gshxkj.com.cn/index/mySuccess.png')">
               <h6>丰富的行业经验</h6>
-              <p>涉及领域广泛，已成功完成众 多项目,满足了不同行业IT需求。</p>
+              <p>涉及领域广泛，已成功完成众多项目,满足了不同行业IT需求。</p>
             </div>
           </el-col>
           <el-col :span="6">
@@ -136,7 +136,7 @@
           <el-col :span="6">
             <div style="border: 1px solid #A6C1DC;border-radius: 10px;height: 203px;margin-top: 8px;">
               <h6 style="margin-top: 21px;">专业的技术团队支持</h6>
-              <p>拥有多行业、多品类专业技术人员，跟随时代脚步，掌握行业先 进技术，高效率、高质量完成每一个项目。</p>
+              <p>拥有多行业、多品类专业技术人员，跟随时代脚步，掌握行业先进技术，高效率、高质量完成每一个项目。</p>
             </div>
           </el-col>
           <el-col :span="6">
