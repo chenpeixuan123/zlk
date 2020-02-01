@@ -443,7 +443,7 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.jpg");
+        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");
         background-repeat: no-repeat;
         background-position: center;
     }

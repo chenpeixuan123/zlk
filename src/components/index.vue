@@ -13,36 +13,27 @@
           <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner1.jpg');">
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner2.jpg');">
-
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner3.jpg');">
-
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner4.jpg');">
-
-          </div>
-        </div>
 <!--        <div class="swiper-slide">-->
-<!--          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner5.png');">-->
+<!--          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner2.jpg');">-->
 
 <!--          </div>-->
 <!--        </div>-->
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner6.jpg');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner4.png');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner7.jpg');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner8.png');">
 
           </div>
         </div>
+
+        <div class="swiper-slide">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner3.png');">
+          </div>
+        </div>
+
       </div>
       <div class="swiper-pagination swiper-pagination-white"></div>
       <div class="swiper-button-prev swiper-button-white" style="margin-left: 15px;"></div>
@@ -154,6 +145,35 @@
             <success></success>
         </div>
 </div>
+
+<!--      新闻模块-->
+      <div class="news">
+          <div>
+            <p>新闻中心  <span>NEWS</span></p>
+              <router-link :to="{ path: '/news',query:{num:0}}" tag="button"  >了解更多 ></router-link>
+<!--              <button>了解更多 ></button>-->
+          </div>
+          <div>
+              <marquee direction="up" behavior="scroll" scrollamount="2"  loop="-1"  height="100%"  hspace="10" vspace="10"  onmouseover="this.stop()" onmouseout="this.start()">
+                  <router-link :to="{ path: '/news',query:{num:4,detaiNum:2}}" tag="p">远程办公，同心战疫情 <span>2020-03-07</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:4}}" tag="p">银行自动化运维项目建设八大难点问题解析 <span>2020-03-07</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:1}}" tag="p">甘肃环讯收到中共兰州高新技术产业开发区工作委员会的感谢信 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:1}}" tag="p">拥抱数字化时代，构建大数据体系 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:4,detaiNum:1}}" tag="p">战胜疫情，匹夫有责--甘肃环讯复工纪实 <span>2020-03-01</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:2}}" tag="p">勇于突破，开拓进取，积极投身于甘肃省信息化建设 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:3}}" tag="p">兰州高新区孵化企业通过ISO系列认证，为可持续创新研发奠定基础 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1}}" tag="p">习近平：全面提高依法防控依法治理能力 为疫情防控提供有力法治保障 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:3}}" tag="p">守正创新 以金融科技磨砺核心竞争力 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:2}}" tag="p">《上海中医药杂志》向全国介绍中医治疗新型冠状病毒肺炎的甘肃经验 <span>2020-03-01</span></router-link>
+
+              </marquee>
+
+          </div>
+
+      </div>
+      <div class="jbx"></div>
 <!--      服务热线-->
       <div class="content fwrx">
           <h5><span>服务热线</span><img src="@/assets/images/phone.png" ><span>0931-8121096</span></h5>
@@ -210,6 +230,81 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "../../node_modules/swiper/dist/css/swiper.css";
+  .jbx{
+      width: 1196px;
+      margin: 0 auto;
+      height: 1px;
+      background: linear-gradient(to right,#fff,#C3C3C3,#fff);
+  }
+  .news{
+      width:1196px;
+      margin: 0 auto;
+      display: flex;
+      margin-bottom: 51px;
+      border-top: 1px solid rgba(195,195,195,.8);
+      height: 143px;
+      box-shadow:0px 3px 3px 0px rgba(40,72,105,0.2);
+      div{
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      &>div:first-child{
+          flex: 0.58;
+          p{
+              color: #10538F;
+              font-size: 20px;
+              span{
+                  color:#FB3434;
+                  font-size: 12px;
+              }
+          }
+          button{
+              outline: none;
+              width: 130px;
+              height: 32px;
+              background: #58A4E7;
+              color: #FFFEFE;
+              font-size: 14px;
+              border: none;
+              border-radius: 16px;
+              margin-top: 18px;
+          }
+      }
+      &>div:nth-of-type(2){
+          flex: 1.7;
+          align-items: flex-start;
+          p{
+              cursor: pointer;
+              padding-left: 73px;
+              position: relative;
+              color: #666666;
+              font-size: 16px;
+              margin-bottom: 16px;
+              &:last-child{
+                  margin-bottom: 0;
+              }
+              &:before{
+                  position: absolute;
+                  content: '';
+                  display: block;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  background: #58A4E7;
+                  left: 34px;
+                  top: 7px;
+              }
+              span{
+                  float: right;
+                  margin-right: 12px;
+              }
+          }
+      }
+
+  }
   .contnet_height{
       position: relative;
       height: 350px;
@@ -287,7 +382,6 @@ export default {
 }
   .fwrx{
       padding: 15px 0;
-    border-top: 1px solid #C3C3C3;
       h5{
           font-weight: 400;
           font-size: 18px;

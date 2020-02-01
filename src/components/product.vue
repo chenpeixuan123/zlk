@@ -19,7 +19,7 @@
                 <el-carousel-item >
                     <div class="lunboImg bg3" >
                         <h2 style="color: #fff;">“惠民”云服务平台</h2>
-                        <p><span style="background: #FFFFCC;color: #336699;">专项存储 / 分项计息 / 专项支取</span></p>
+                        <p><span style="background: #FFFFCC;color: #336699;">生活缴费 / 安全管理 / 方便快捷</span></p>
                     </div>
                 </el-carousel-item>
 
@@ -32,30 +32,21 @@
                     <span style="opacity: 0">123</span>
                     <ul class="left" id="div2" style="margin-top: -18px;z-index: 2;">
                         <div>
-                            产品介绍
+                            业务介绍
                         </div>
 
                         <li @click="tab(2,'成功案例')" :class="index==2?'active1':''"><span>成功案例</span> <i :class="index==2?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <ul v-show="showOrFalse">
-
-                            <li @mouseenter="tabSuccess(1)" :class="indexSuccess==1?'active3':''"><span>环讯数据可视化系统</span></li>
+<!--                            <li @mouseenter="tabSuccess(1)" :class="indexSuccess==1?'active3':''"><span>数据可视化系统</span></li>-->
+                            <li @mouseenter="tabSuccess(6)" :class="indexSuccess==6?'active3':''"><span>数字大屏</span></li>
                             <li @mouseenter="tabSuccess(2)" :class="indexSuccess==2?'active3':''"><span>薪酬管理系统</span></li>
                             <li @mouseenter="tabSuccess(3)" :class="indexSuccess==3?'active3':''"><span>住宅维修资金云管理平台</span></li>
                             <li @mouseenter="tabSuccess(4)" :class="indexSuccess==4?'active3':''"><span>“惠民”云服务平台</span></li>
                             <li @mouseenter="tabSuccess(5)" :class="indexSuccess==5?'active3':''"><span>陇银资本互联网平台</span></li>
-
-<!--                            <li @mouseenter="tabSuccess(1)" :class="indexSuccess==1?'active3':''"><span>住宅维修基金云管理平台</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(2)" :class="indexSuccess==2?'active3':''"><span>陇银资本互联网平台</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(3)" :class="indexSuccess==3?'active3':''"><span>惠民云服务平台</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(4)" :class="indexSuccess==4?'active3':''"><span>豪马驾校后台云管理系统</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(5)" :class="indexSuccess==5?'active3':''"><span>智慧社区</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(6)" :class="indexSuccess==6?'active3':''"><span>农民工工资保证金监管平台</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(7)" :class="indexSuccess==7?'active3':''"><span>服刑人员个人资金及消费管理系统</span></li>-->
-<!--                            <li @mouseenter="tabSuccess(8)" :class="indexSuccess==8?'active3':''"><span>运营甘肃省中小企业公共服务平台</span></li>-->
                         </ul>
                         <li @click="tab(1,'从事行业')" :class="index==1?'active1':''"><span>从事行业</span> <i :class="index==1?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
                         <li style="margin-top: 2px" @click="tab(3,'技术服务')" :class="index==3?'active1':''"><span>技术服务</span> <i :class="index==3?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
-                        <li style="margin-top: 2px" @click="tab(4,'重点项目')" :class="index==4?'active1':''"><span>重点项目</span> <i :class="index==4?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>
+<!--                        <li style="margin-top: 2px" @click="tab(4,'重点项目')" :class="index==4?'active1':''"><span>重点项目</span> <i :class="index==4?'el-icon-caret-bottom active2':'el-icon-caret-right'"></i></li>-->
 
                     </ul>
                 </el-col>
@@ -65,7 +56,7 @@
                             <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
-                            <p class="title_right">当前位置：首页 > 产品介绍 > {{msg}}</p>
+                            <p class="title_right">当前位置：首页 > 环讯业务 > {{msg}}</p>
                         </el-col>
                     </el-row>
 
@@ -116,15 +107,7 @@
                             </div>
                         </div>
                         <div v-show="indexSuccess==1">
-                            <h3>环讯数据可视化系统</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list1.png" alt="">
-                            <p>
-                                当前，银行业金融科技发展迅速，自身信息系统的迭代更新较快。为更加直观清楚的展示银行各项业务指标，便于高管层统筹研究、决策部署，在银行内部布置一套数据可视化的、可实时展示各部门业务指标的大屏展示系统显得尤为重要。
-                                为满足市场需要，甘肃环讯基于VUE前端集成化框架，实现大屏页面的快速、组件化、定制化开发，研发了环讯数据可视化系统。该产品涵盖银行数据中心、行长办公室、公司业务部、个人业务部、信用卡中心等业务领域，并正在根据客户实际需求，研发多场景大屏系统应用，为银行的管理层提供“智能驾驶舱”式的决策支持和发展保障。
-                            </p>
-                            <!--                            <h5>应用领域：便民缴费、银企合作</h5>-->
-                            <!--                            <h5>市场占有率：六县两区</h5>-->
-                            <!--                            <h5>软件著作权：《住宅维修基金云管理平台》</h5>-->
+                            <ksh></ksh>
                         </div>
                         <div v-show="indexSuccess==2">
                             <h3>薪酬管理系统</h3>
@@ -152,77 +135,9 @@
                                 该平台实现了对用户、部门以及对应权限的管理和配置;通过ODS获取数据，对客户信息及还款计划的管理、报表展示;财务清算功能实现客户短信预警、财务人员短信预警、返佣明细、垫付明细管理;贷款管理功能实现对客户信息、还款记录、放款记录、逾期还款、还款计划的展示、预警、数据更新。该平台还可实现退保、个人信息维护、公共参数配置、地区信息配置及操作日志记录等功能。
                             </p>
                         </div>
-<!--                        <div v-show="indexSuccess==1">-->
-<!--                            <h3>住宅维修基金云管理平台</h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list1.png" alt="">-->
-<!--                            <p>-->
-<!--                                针对我省各级房管局单位住宅维修资金管理现状，根据政府出台的住宅维修资金管理制度，结合银行专业、规范的账务处理机制，甘肃环讯研发推出住房维修资金管理云平台。该平台接入房管局、业主、开发商及物业公司等多应用场景，采用金融IT业先进的F5集群技术，为用户提供持续、快速、稳定的线上服务，为维修资金管理提供清晰、简洁的财务数据、丰富的统计报表，规范并简化维修资金的管理流程，从而既保障业主的计息权益，又大大提高了工作效率。-->
-
-<!--                            </p>-->
-<!--&lt;!&ndash;                            <h5>应用领域：便民缴费、银企合作</h5>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <h5>市场占有率：六县两区</h5>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <h5>软件著作权：《住宅维修基金云管理平台》</h5>&ndash;&gt;-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==2">-->
-<!--                            <h3>陇银资本互联网平台</h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list2.png" alt="">-->
-<!--                            <p>该平台是甘肃环讯给甘肃陇银资本管理有限公司(简称“陇银资本”)提供的一套数据统计及展示平台。该产品可实现车险分期产品的存量客户交叉导流及自身渠道的客户新增。-->
-<!--                                该平台实现了对用户、部门以及对应权限的管理和配置;通过ODS获取数据，对客户信息及还款计划的管理、报表展示;财务清算功能实现客户短信预警、财务人员短信预警、返佣明细、垫付明细管理;贷款管理功能实现对客户信息、还款记录、放款记录、逾期还款、还款计划的展示、预警、数据更新。该平台还可实现退保、个人信息维护、公共参数配置、地区信息配置及操作日志记录等功能。</p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==3">-->
-<!--                            <h3>惠民云服务平台 </h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list3.png" alt="">-->
-<!--                            <p>-->
-<!--                                经调研，现阶段广大居民普遍存在生活缴费难、管理难问题。以便民、惠民为服务宗旨，甘肃环讯推出“惠民”云服务平台。收费单位可通过该平台实现对所有缴费用户统一管理，对收缴 情况一目了然。-->
-<!--                                该平台加入了shiro权限框架，以防止多角色、多用户都越权问题；采用https协议保证数据安全性，通过互联网支付完成二级清分。该平台具有开放性、便捷性、延展性，能快速融入百姓日常生活，为群众提供定制化、差异化、个性化服务。广大居民可通过“惠民”云服务平台足不出户轻松缴费。-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==4">-->
-<!--                            <h3>豪马驾校后台云管理系统</h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list4.png" alt="">-->
-<!--                            <p>豪马驾校后台云管理系统对驾校进行全方位互联网化管理，涵盖学员管理、教练管理、教学管理、场地管理、车辆管 理、网点管理、行政管理、财务管理、人事管理、终端管理等方面，实现了核心流程自动化、关键决策数据化、 重点数据可视化管理。针对不同的用户角色提供全面的实用功能，结合当前流行且使用的“微信小程序”、 “微信公众号”等通道，为用户提供可靠、便捷的服务。打造生态化智慧平台，可将保险业务、陪驾业务、买 车租车业务及贷款业务集成进来，形成“人+车+金融+数字”为一体的生态服务圈。</p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==5">-->
-<!--                            <h3>智慧社区</h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list5.png" alt="">-->
-<!--                            <p>-->
-<!--                                智慧社区是一个专为物业管理公司打造的移动智能物业管理服务系统。系统为物业公司和业主提供实时互-->
-<!--                                动平台，通过公众号平台，业主可实现快速查看小区公告、快速报修、查询/缴纳物业费、参与小区各项活动、-->
-<!--                                随时随地查看等功能。智慧社区，能大幅提高物业公司数字管理水平，更能提升业主对物业的服务满意度。主-->
-<!--                                要功能模块有智能门禁、缴物业费、智能车闸、小区报修、小区管路、商圈等。-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==6">-->
-<!--                            <h3>农民工工资保证金监管平台 </h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list6.png" alt="">-->
-<!--                           <p>-->
-<!--                               农民工工资保证金监管平台是针对近年来土建项目农民工工资拖欠问题而开发的监管平台。该平台实现了-->
-<!--                               保证金监管全流程，主要有执法局对建设单位向保证金专户交存专项资金的全流程的监督管理过程，包括建设-->
-<!--                               单位信息管理、工程项目信息管理、保证金标准制定、保证金交存、补交、支用、退还等功能，该业务涉及对-->
-<!--                               用户有执法局用户、财政局用户、银行用户、建设单位用户。保证金监管平台将满足实现对农民工工资保证金-->
-<!--                               的规范化管理，实现高效、准确、公正的管理目标，并且实现专项存储、分项计息、专项支取等业务目标。甘-->
-<!--                               肃银行通过为执法局搭建该平台从中吸纳巨额保证金存款。-->
-<!--                           </p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==7">-->
-<!--                            <h3>服刑人员个人资金及消费管理系统</h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list7.png" alt="">-->
-<!--                            <p>“服刑人员个人资金及消费管理系统”（以下简称资管系统），是集成监狱、银行、开发公司为一体的资 金管理系统，系统运行中，犯人家属可以通过监狱要求银行给犯人开通的账户中汇入款项，犯人可以在监狱中 通过公司提供的购物终端机进行查询账户和购物，所有交易都在整套系统中完成不涉及现金交易，方便了监狱 购物登记的流程并大大减少了监狱工作人员的工作量，所有交易会产生交易数据可以保存并查询，除此之外还 能准确的生成各种资金明细和报表，极大的方便了服刑人员购物和监狱工作人员对犯人的资金管理。</p>-->
-<!--                        </div>-->
-<!--                        <div v-show="indexSuccess==8">-->
-<!--                            <h3>运营甘肃省中小企业公共服务平台 </h3>-->
-<!--                            <img src="http://images.gshxkj.com.cn/product/list8.png" alt="">-->
-<!--                            <p>-->
-
-<!--                                甘肃省中小企业公共服务平台是甘肃省工业和信息化厅下属的公共服务类平台，旨在为中小企业解决 发-->
-<!--                                展的共性问题，促进中小企业结构调整，不断提升企业创新能力和核心竞争力，发挥综合性服务平台枢纽作用。-->
-<!--                                具备“六个一”基本服务功能：一个在线服务网站、一站式窗口服务、一条服务咨询热线套服务标准、一个服-->
-<!--                                务产品资源库、一支服务专家团队。通过以政府引导、公益服务带动、社会专业服务机构广泛参与的运营方式，-->
-<!--                                整合服务资源、创新服务模式、有效对接服务需求，为中小企业提供找得到、用得起、有保障、能见效的服-->
-<!--                                务。-->
-
-<!--                            </p>-->
-<!--                        </div>-->
+                        <div v-show="indexSuccess==6">
+                            <szdp></szdp>
+                        </div>
                     </div>
 
                     <!--技术服务-->
@@ -268,8 +183,14 @@
 </template>
 
 <script>
+    import ksh from "./dapin/ksh2";
+    import szdp from "./dapin/szdp1";
     export default {
         name: "aboutHX",
+        components:{
+            ksh,
+            szdp
+        },
         data(){
             return{
                 index:2,
@@ -384,13 +305,13 @@
     }
 }
 .bg1{
-    background-image: url('http://images.gshxkj.com.cn/product/pro1.png');
+    background-image: url('http://images.gshxkj.com.cn/product/pro1.jpg');
 }
 .bg2{
-    background-image: url('http://images.gshxkj.com.cn/product/pro2.png');
+    background-image: url('http://images.gshxkj.com.cn/product/pro2.jpg');
 }
 .bg3{
-    background-image: url('http://images.gshxkj.com.cn/product/pro3.png');
+    background-image: url('http://images.gshxkj.com.cn/product/pro3.jpg');
 }
     .success{
         &>div{
@@ -534,7 +455,7 @@
             box-sizing: border-box;
             padding: 0 35px;
             &:first-of-type{
-                margin-bottom: 2px;
+                margin-bottom: 1px;
             }
             &>span{
                 flex: 10;

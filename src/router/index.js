@@ -32,7 +32,10 @@ const routes = [
         path: 'concatOus',
         component: () => import(/* webpackChunkName: "about" */ '../components/concatOus.vue')
       },
-
+      {
+        path: 'news',
+        component: () => import(/* webpackChunkName: "about" */ '../components/news.vue')
+      },
     ]
   },
   {

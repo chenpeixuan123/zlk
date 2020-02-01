@@ -14,7 +14,8 @@
                         <ul class="headerTab">
                             <router-link :to="{ path: '/index' }" tag="li" exact @mouseenter.native="showZheZhao=false"><span >首页</span></router-link>
                             <router-link :to="{ path: '/aboutHX',query:{num:1}}" tag="li"  @mouseenter.native="showZheZhao=true" @click.native="showZheZhao=false"><span>关于环讯</span></router-link>
-                            <router-link :to="{ path: '/product' }" tag="li" @mouseenter.native="showZheZhao=false"><span >产品介绍</span></router-link>
+                            <router-link :to="{ path: '/news',query:{num:0,message:'新闻中心'}}" tag="li"  @mouseenter.native="showZheZhao=false" @click.native="showZheZhao=false"><span>新闻中心</span></router-link>
+                            <router-link :to="{ path: '/product' }" tag="li" @mouseenter.native="showZheZhao=false"><span >环讯业务</span></router-link>
                             <router-link :to="{ path: '/addHX' }" tag="li" ><span >人才招聘</span></router-link>
                             <router-link :to="{ path: '/concatOus' }" tag="li" ><span style="border: none;" >联系我们</span></router-link>
                         </ul>
@@ -79,7 +80,7 @@
         },
         watch:{
             '$route'(to,from){
-                const path=['/index','/aboutHX','/product','/addHX','/concatOus'];
+                const path=['/index','/aboutHX','news','/product','/addHX','/concatOus'];
                 if(path.indexOf(to.path)>path.indexOf(from.path)){
                     this.transitionName='slideLeft';
                 }else{
@@ -120,7 +121,7 @@
                 color: #fff;
                 padding-top: 4px;
                 &:first-child{
-                    margin-left: 710px;
+                    margin-left: 586px;
                     padding-left: 15px;
                 }
                 &:last-child{
