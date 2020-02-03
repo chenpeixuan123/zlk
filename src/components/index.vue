@@ -71,7 +71,7 @@
                   <div class="ywfw_every">
                     <img src="http://images.gshxkj.com.cn/index/ywfw1.png" alt="">
                   </div>
-                  <p>定制开发业务</p>
+                  <p>产品及解决方案</p>
                 </div>
               </el-col>
               <el-col :span="6">
@@ -79,7 +79,7 @@
                   <div class="ywfw_every">
                     <img src="http://images.gshxkj.com.cn/index/ywfw2.png" alt="">
                   </div>
-                  <p>司法行业智慧生卫服务</p>
+                  <p>智慧司法</p>
                 </div>
               </el-col>
               <el-col :span="6">
@@ -87,7 +87,7 @@
                   <div class="ywfw_every">
                     <img src="http://images.gshxkj.com.cn/index/ywfw3.png" alt="">
                   </div>
-                  <p>系统维护</p>
+                  <p>系统集成</p>
                 </div>
               </el-col>
               <el-col :span="6">
@@ -95,7 +95,7 @@
                   <div class="ywfw_every">
                     <img src="http://images.gshxkj.com.cn/index/ywfw4.png" alt="" style="width: 110px;">
                   </div>
-                  <p>银行IT运维</p>
+                  <p>IT运维服务及其他</p>
                 </div>
               </el-col>
             </el-row>
@@ -130,20 +130,20 @@
           <el-col :span="6">
             <div style="border: 1px solid #A6C1DC;border-radius: 10px;height: 203px;margin-top: 8px;">
               <h6 style="margin-top: 21px;">完善的管理</h6>
-              <p>专业成熟的项目管理、产品管理、 IT服务管理以及供应商管理体系， 保证每一个项目成功实施。</p>
+              <p>专业成熟的项目管理、产品管理、IT服务管理以及供应商管理体系，保证每一个项目成功实施。</p>
             </div>
           </el-col>
           <el-col :span="6">
             <div style="border: 1px solid #A6C1DC;border-radius: 10px;height: 203px;margin-top: 8px;">
               <h6 style="margin-top: 21px;">专业的技术团队支持</h6>
-              <p>拥有多行业、多品类专业技术人 员，跟随时代脚步，掌握行业先 进技术，高效率、高质量完成每 一个项目。</p>
+              <p>拥有多行业、多品类专业技术人员，跟随时代脚步，掌握行业先 进技术，高效率、高质量完成每一个项目。</p>
             </div>
           </el-col>
           <el-col :span="6">
             <div style="background-image: url('http://images.gshxkj.com.cn/index/mySuccess.png')">
               <h6>先进的管理理念</h6>
               <p>
-                公司顺应国家发展趋势，紧跟互 联网发展步伐，始终以技术为核 心，以科技创新为指引,为每位用 户提供安全、快捷、高效、实用 的专业信息化服务。
+                公司顺应国家发展趋势，紧跟互联网发展步伐，始终以技术为核心，以科技创新为指引,为每位用户提供安全、快捷、高效、实用的专业信息化服务。
               </p>
             </div>
           </el-col>
@@ -156,7 +156,7 @@
 </div>
 <!--      服务热线-->
       <div class="content fwrx">
-          <h5><span>服务热线</span><img src="@/assets/images/phone.png" ><span>17361617371</span></h5>
+          <h5><span>服务热线</span><img src="@/assets/images/phone.png" ><span>0931-8121096</span></h5>
       </div>
 
   </div>

@@ -454,9 +454,10 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");
+        /*background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");*/
+        background-image: url("../assets/images/content.jpg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center -15px;
     }
     .content{
         width: 1196px;

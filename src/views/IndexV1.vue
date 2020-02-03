@@ -15,7 +15,7 @@
                             <router-link :to="{ path: '/index' }" tag="li" exact @mouseenter.native="showZheZhao=false"><span >首页</span></router-link>
                             <router-link :to="{ path: '/aboutHX',query:{num:1}}" tag="li"  @mouseenter.native="showZheZhao=true" @click.native="showZheZhao=false"><span>关于环讯</span></router-link>
                             <router-link :to="{ path: '/product' }" tag="li" @mouseenter.native="showZheZhao=false"><span >产品介绍</span></router-link>
-                            <router-link :to="{ path: '/addHX' }" tag="li" ><span >加入环讯</span></router-link>
+                            <router-link :to="{ path: '/addHX' }" tag="li" ><span >人才招聘</span></router-link>
                             <router-link :to="{ path: '/concatOus' }" tag="li" ><span style="border: none;" >联系我们</span></router-link>
                         </ul>
                     </el-col>

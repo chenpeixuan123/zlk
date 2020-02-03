@@ -42,7 +42,7 @@
                             <p>1.甘肃环讯信息科技有限公司注册于2018年6月，专注于为政府机构及金融机构提供科技服务，为客户提供专业、便捷的信息化服务和安全信赖的产品。</p>
                             <p>2.公司主营业务有：金融科技定制化软件研发及技术支持、甘肃省中小企业公共服务平台运营等。</p>
                             <p>3.公司取得资质有：国际CMMI3认证、ISO9001认证、ISO27001认证、公共安全业务连续性管理体系认证，拥有12项软件著作权；被兰州市政府确定为兰州市青年就业见习基地。</p>
-                            <p>4.公司目前由综合部，市场部，产品研发部，技术服务部和实施运维部四个部门组成，共有员工36人，本科及以上学历占比100％。</p>
+                            <p>4.公司目前由综合部，市场部，产品研发部，技术服务部和实施运维部五个部门组成，本科及以上学历占比100％。</p>
                             <p>5.公司自成立以来，始终以高新技术为企业发展核心，以服务地方为企业发展初心，秉持“用户体验至上”服务理念，通过诚实规范的经营、创新的技术服务、严格的风险控制，持续创造价值，赢得员工、合作伙伴及客户的一致认可。</p>
                     </div>
 <!--                        公司使命-->
@@ -65,112 +65,112 @@
                     <div class="main" v-show="index==4">
 <!--                        <p>为了壮大公司实力，提高公司知名度，积极响应政府对高新技术企业的支持，我公司目前正在进行软著、双软企业、CMMI3等一系列的资质认证。目前软著、CMMI3认证已经下证；其它认证也已经拟定好时间表和工作计划表。</p>-->
                         <p>公司已通过国际CMMI3认证、ISO9001认证、ISO27001认证，公共安全业务连续性管理体系认证。</p>
-                        <h4 class="gsrzTitle">公司软著</h4>
-                        <el-row :gutter="20" class="gsrz">
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[0]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[1]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[2]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[3]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[4]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[5]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[6]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[7]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[8]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[9]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[10]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                            <el-col :span="6">
-                                <div>
-                                    <el-image
-                                            :src="srcList[11]"
-                                            :preview-src-list="srcList">
-                                    </el-image>
-                                </div>
-                            </el-col>
-                        </el-row>
-                        <h4 class="gsrzTitle">CMMI3认证</h4>
+<!--                        <h4 class="gsrzTitle">公司软著</h4>-->
+<!--                        <el-row :gutter="20" class="gsrz">-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[0]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[1]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[2]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[3]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[4]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[5]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[6]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[7]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[8]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[9]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[10]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                            <el-col :span="6">-->
+<!--                                <div>-->
+<!--                                    <el-image-->
+<!--                                            :src="srcList[11]"-->
+<!--                                            :preview-src-list="srcList">-->
+<!--                                    </el-image>-->
+<!--                                </div>-->
+<!--                            </el-col>-->
+<!--                        </el-row>-->
+                        <h4 class="gsrzTitle" style="padding-left: 324px;font-size: 20px;">CMMI3认证</h4>
                         <el-row :gutter="20" class="cmmi">
                             <el-col :span="17">
                                 <div>
                                     <el-image
-                                            :src="srcList[12]"
-                                            :preview-src-list="srcList">
+                                            :src="srcList[0]"
+                                            :preview-src-list="srcList" style="margin-left: 150px;">
                                     </el-image>
                                 </div>
                             </el-col>
@@ -182,7 +182,7 @@
                         </el-row>
                     </div>
 <!--                        合作伙伴-->
-                    <div class="main" v-show="index==5">
+                    <div class="main" v-show="index==5" style="min-height: 600px;">
                         <el-row class="hzhb" type="flex" justify="center" align="middle" style="flex-wrap: wrap;">
                             <el-col :sm="8">
                                 <div>
@@ -221,11 +221,11 @@
                                 </div>
                             </el-col>
                             <el-col :sm="8">
-                                <div><img src="http://images.gshxkj.com.cn/aboutHX/hx_partner1.jpg" class="last1" alt=""></div>
+                                <div><img src="../assets/images/bank_logo.jpg" style="width: 70%"  alt=""></div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/hx_partner2.jpg"  class="last1" alt="">
+                                    <img src="../assets/images/logo.jpg" style="width: 60%" alt="">
                                 </div>
                             </el-col>
 
@@ -257,18 +257,18 @@
                 msg:'公司简介',
                 height:window.screen.height-200,
                 srcList: [
-                    'http://images.gshxkj.com.cn/aboutHX/hx1.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx2.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx3.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx4.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx5.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx6.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx7.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx8.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx9.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx10.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx11.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/hx12.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx1.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx2.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx3.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx4.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx5.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx6.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx7.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx8.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx9.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx10.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx11.jpg',
+                    // 'http://images.gshxkj.com.cn/aboutHX/hx12.jpg',
                     'http://images.gshxkj.com.cn/aboutHX/cmmi.png'
                 ]
             }
@@ -359,8 +359,8 @@
         .cmmiTwo{
             width: 150%;
             position: relative;
-            left: -40%;
-            top: 220px;
+            left: -60%;
+            top: 108px;
         }
     }
     .gsrzTitle{

@@ -22,7 +22,7 @@
                     </ul>
                 </el-col>
                 <el-col :span="17">
-                    <el-row type="flex" align="middle" style="margin-bottom: 40px;">
+                    <el-row type="flex" align="middle" style="margin-bottom: 40px;" v-show="index!=0">
                         <el-col :sm="12">
                             <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
@@ -31,6 +31,10 @@
                         </el-col>
                     </el-row>
 
+                    <div class="main1" v-show="index==0" style="min-height: 600px;">
+                        <p style="margin-top: 30px;"> 我们倡导团队协作，公平公正，领导员工与企业共成长的企业文化，鼓励创新，致力于为员工创造充分展示自我才智，发挥潜能的舞台。除了为员工提供极具竞争力的福利待遇外，公司还建立了一整队与员工的职业生涯发展相结合的合理晋升体系，针对不同特点的员工设置不同的晋升通道，专业技能优秀的员工晋升以绩效考核结果为基础，同时又作为薪酬调整的依据。公司内部空缺职位优先考虑内部竞聘人员，为员工提供广泛的发展空间，努力做到公司与员工一起成长。</p>
+
+                    </div>
                     <!--                        人文关怀-->
                     <div class="main1" v-show="index==1">
                         <h2>员工福利</h2>
@@ -545,7 +549,7 @@
         name: "aboutHX",
         data(){
             return{
-                index:2,
+                index:0,
                 msg:'人文关怀',
                 activeName1: ['1'],
                 activeName2: ['1'],
@@ -824,7 +828,7 @@
         margin: 0 auto;
         background-image: url("http://images.gshxkj.com.cn/index/banner5.png");
         background-repeat: no-repeat;
-        background-position: center -38px;
+        background-position: center ;
     }
     .content{
         width: 1196px;
