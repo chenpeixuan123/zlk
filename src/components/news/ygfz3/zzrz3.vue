@@ -13,7 +13,7 @@
             <img src="http://images.gshxkj.com.cn/news/tszs/zzrz2.png" style="width: 100%">
             <img src="http://images.gshxkj.com.cn/news/tszs/zzrz3.png" style="width: 100%">
         </div>
-        <p class="next" @click="toParent">下一篇：感谢信</p>
+        <p class="next" @click="toParent">下一篇：喜报传来开门红，再接重任显壮志</p>
     </div>
 </template>
 
@@ -22,7 +22,7 @@
         name: "newsDetail",
         methods:{
             toParent(){
-                this.$emit('changeIndex',1)
+                this.$emit('changeIndex',4)
             }
         }
     }

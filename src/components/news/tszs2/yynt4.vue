@@ -72,7 +72,7 @@
             <p>如果我们不仅仅满足日常运维工作，还需要让运维工作自助化，服务化，这就需要自动化运维系统具备比较强大的集成和编排能力，能够将底层多个自动化运维工具按照编排的顺序调度，满足用户端到端运维自动化的任务。</p>
 
         </div>
-        <p class="next" @click="toParent">下一篇：拥抱数字化时代，构建大数据体系</p>
+        <p class="next" @click="toParent">下一篇：深度 | 新基建投资领域与前景展望</p>
     </div>
 </template>
 
@@ -81,7 +81,7 @@
         name: "newsDetail",
         methods:{
             toParent(){
-                this.$emit('changeIndex',1)
+                this.$emit('changeIndex',5)
             }
         }
     }

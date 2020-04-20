@@ -155,6 +155,25 @@
           </div>
           <div>
               <marquee direction="up" behavior="scroll" scrollamount="2"  loop="-1"  height="100%"  hspace="10" vspace="10"  onmouseover="this.stop()" onmouseout="this.start()">
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:9}}" tag="p">润通集团调研环讯科技取得圆满成功<span>2020-04-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:2}}" tag="p">中国疫情防控彰显党的体制优势<span>2020-04-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:10}}" tag="p">观点 | 区块链技术对商业银行的影响分析及启示<span>2020-04-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:9}}" tag="p">观点 | 移动办公应用思考与风险控制<span>2020-04-12</span></router-link>
+
+
+
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:8}}" tag="p">环讯科技助力甘肃金融企业创新发展<span>2020-04-03</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:6}}" tag="p">实战 | 新一代信息系统工程建设<span>2020-04-03</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:7}}" tag="p">实战丨金融科技创新赋能智慧旅游<span>2020-04-03</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:5}}" tag="p">深度 | 新基建投资领域与前景展望<span>2020-03-25</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:7}}" tag="p">兰州市高新区人社局莅临环讯科技关怀疫情期间企业复工复产并慰问企业职工<span>2020-03-23</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:5}}" tag="p">聚焦创业典型|兰州高新区优秀孵化企业 抓防控抓生产别样红（一）<span>2020-03-13</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:6}}" tag="p">聚焦创业典型|兰州高新区优秀孵化企业 抓防控抓生产别样红（二）<span>2020-03-13</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:4}}" tag="p">喜报传来开门红，再接重任显壮志 ——记甘肃环讯信息科技有限公司重大服务合同成功签约<span>2020-03-12</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:4,detaiNum:2}}" tag="p">远程办公，同心战疫情 <span>2020-03-07</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:2,detaiNum:4}}" tag="p">银行自动化运维项目建设八大难点问题解析 <span>2020-03-07</span></router-link>
 
@@ -164,9 +183,9 @@
 
                   <router-link :to="{ path: '/news',query:{num:3,detaiNum:2}}" tag="p">勇于突破，开拓进取，积极投身于甘肃省信息化建设 <span>2020-03-01</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:3,detaiNum:3}}" tag="p">兰州高新区孵化企业通过ISO系列认证，为可持续创新研发奠定基础 <span>2020-03-01</span></router-link>
-                  <router-link :to="{ path: '/news',query:{num:1}}" tag="p">习近平：全面提高依法防控依法治理能力 为疫情防控提供有力法治保障 <span>2020-03-01</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:1}}" tag="p">习近平：全面提高依法防控依法治理能力 为疫情防控提供有力法治保障 <span>2020-03-01</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:2,detaiNum:3}}" tag="p">守正创新 以金融科技磨砺核心竞争力 <span>2020-03-01</span></router-link>
-                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:2}}" tag="p">《上海中医药杂志》向全国介绍中医治疗新型冠状病毒肺炎的甘肃经验 <span>2020-03-01</span></router-link>
+<!--                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:2}}" tag="p">《上海中医药杂志》向全国介绍中医治疗新型冠状病毒肺炎的甘肃经验 <span>2020-03-01</span></router-link>-->
 
               </marquee>
 
