@@ -51,7 +51,7 @@
                 <el-col :span="17" :style="{minHeight:height+'px'}">
                     <el-row type="flex" align="middle">
                         <el-col :sm="12">
-                            <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
+                            <span class="title"><img src="/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
                             <p class="title_right">当前位置：<span @click="toNews">新闻中心</span> <span v-if="msg!='新闻中心'">{{msg=='新闻中心'?'':'>'+msg}}</span></p>
@@ -60,17 +60,14 @@
 
 
                     <div class="main" v-show="!detailShow">
-                        <div class="news_title" @click="toDetail(3,9)">
+                        <div class="news_title" @click="toDetail(3,15)">
                             <div>
                                 <img src="@/assets/images/news/xwzx.jpg" alt="">
                             </div>
                             <div>
                                 <!--                                <span>2020-2-11</span>-->
-                                <h5>润通集团调研环讯科技取得圆满成功</h5>
-                                <p>
-                                    4月10日下午，陇西润通民生集团（简称：润通集团）总工王建中带队一行七人专程来访甘肃环讯信息科技有限公司（简称：环讯科技），就润通便民生活缴费平台开展调研并取得圆满成功。本次调研以座谈会的形式开展，双方就陇西县居民生活用水、取暖、物业服务等方面收费管理信息化程度不足的现状，后期润通便民生活缴费平台软件运行过程中可能会出现的问题进行充分......
-
-                                </p>
+                                <h5>环讯科技中标甘肃银行网络安全服务项目</h5>
+                                <p>近日，甘肃环讯信息科技有限公司（简称：环讯科技）与北京神州绿盟科技有限公司（简称：绿盟科技）联合中标甘肃银行网络安全服务项目。这是环讯科技在网络信息安全业务迈出的新的有力一步，也是公司开拓发展道路、实现技术进步的一次机遇。环讯科技将坚持创新发展这一核心理念，努力做好金......</p>  
                             </div>
                         </div>
                         <ul class="news_every">
@@ -78,8 +75,10 @@
                         </ul>
                         <el-pagination
                                 background
+                                :page-size="15"
+                                @current-change="changePage"
                                 layout="prev, pager, next"
-                                :total="1">
+                                :total="total">
                         </el-pagination>
                     </div>
 
@@ -130,7 +129,10 @@
                 index: 0,
                 msg: '新闻中心',
                 height: window.screen.height - 200,
-                newsList
+                newsList:[],//总的分页
+                total:1,
+                slideList:[],//点击侧边栏分页
+                ifAllList:true,//查询所有的
             }
         },
         watch: {
@@ -143,6 +145,8 @@
             }
         },
         mounted() {
+
+            this.page();//page分页
             this.index = this.$route.query.num || 0;
             if (this.$route.query.num == 1||this.$route.query.num == 2 || this.$route.query.num == 3 || this.$route.query.num == 4) {
                 this.detailShow=true;
@@ -156,6 +160,25 @@
             window.removeEventListener('scroll', this.scrollToTop)
         },
         methods: {
+            changePage(page){
+                if(this.ifAllList){
+                    this.page(page);//查询所有的
+                }else{
+                    this.slidePage(page);//查询分类下的
+                }
+
+            },
+            page(currentPage=1){
+                //循环筛选新闻列表
+                let arr=[];
+                newsList.forEach((item,index)=>{
+                    if(item.currentPage==currentPage){
+                        arr.push(item)
+                    }
+                })
+                this.newsList=arr;
+                this.total=newsList.length;
+            },
             toNews(){
                 this.detailShow=false;
                 this.msg='新闻中心';
@@ -187,7 +210,7 @@
                 this.detailShow=false;//控制显示与否详情
 
                 // 筛选对应的
-
+                this.ifAllList=false;
                 let arr=[];
                 let indexNum=index;
                 newsList.forEach((item,index)=>{
@@ -195,7 +218,15 @@
                          arr.push(item)
                     }
                 })
-                this.newsList=arr;
+
+                this.slideList=arr;//slide下的所有数据
+                console.log(arr)
+                this.slidePage();
+            },
+            slidePage(currentPage=1){
+                //循环筛选新闻列表
+                this.newsList=this.slideList.slice((currentPage-1)*15,(currentPage-1)*15+15);
+                this.total=this.slideList.length;//侧边栏总页数
             },
             tabSuccess(index) {
                 const that = this;
@@ -265,11 +296,10 @@
             cursor: pointer;
             position: relative;
             color: #000;
-            font-size: 14px;
+            font-size: 14px!important;
             padding: 9px 0 13px 30px;
             opacity: 0.9;
             border-bottom: 1px solid rgba(112, 112, 112, .4);
-
             span {
 
                 &:last-child {
@@ -455,7 +485,7 @@
     .lunBo {
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/news/tszs/banner.png");
+        background-image: url("http://images.gshxkj.com.cn:8090/news/tszs/banner.png");
         background-repeat: no-repeat;
         background-position: center;
     }

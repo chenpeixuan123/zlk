@@ -26,7 +26,7 @@
                 <el-col :span="17" :style="{minHeight:height+'px'}">
                     <el-row type="flex" align="middle">
                         <el-col :sm="12">
-                            <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
+                            <span class="title"><img src="http://images.gshxkj.com.cn:8090/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
                             <p class="title_right">当前位置：首页 > 关于环讯 > {{msg}}</p>
@@ -41,7 +41,7 @@
 <!--                        <p>我们拥有一支年轻、敏锐、朝气蓬勃、志向远大的团队。公司倡导团队协作，公平公正，强调员工与企业共成长的企业文化， 鼓励创新，致力于为员工营造充分展示自我才智、发挥潜能的舞台。除了为员工提供极具竞争力的福利待遇外，公司还建立了一整 套与员工的职业生涯发展相结合的合理晋升体系，针对不同特点的员工设置不同的晋升通道，专业技能优秀的员工可以按照技术路线晋升，管理才能卓越的员工可以按照职能体系晋升。员工晋升以绩效考核结果为基础，同时又作为薪酬调整的依据。公司内部空缺岗位优先考虑内部竞聘人员，为员工提供广阔的发展空间，努力做到公司与员工一起成长。</p>-->
                             <p>1.甘肃环讯信息科技有限公司注册于2018年6月，专注于为政府机构及金融机构提供科技服务，为客户提供专业、便捷的信息化服务和安全信赖的产品。</p>
                             <p>2.公司主营业务有：金融科技定制化软件研发及技术支持、甘肃省中小企业公共服务平台运营等。</p>
-                            <p>3.公司取得资质有：国际CMMI3认证、ISO9001认证、ISO27001认证、公共安全业务连续性管理体系认证，拥有12项软件著作权；被兰州市政府确定为兰州市青年就业见习基地。</p>
+                            <p>3.公司取得资质有：科技型中小企业、国际CMMI3认证、ISO9001认证、ISO27001认证、公共安全业务连续性管理体系认证，拥有12项软件著作权；被兰州市政府确定为兰州市青年就业见习基地。</p>
                             <p>4.公司目前由综合部，市场部，产品研发部，技术服务部和实施运维部五个部门组成，本科及以上学历占比100％。</p>
                             <p>5.公司自成立以来，始终以高新技术为企业发展核心，以服务地方为企业发展初心，秉持“用户体验至上”服务理念，通过诚实规范的经营、创新的技术服务、严格的风险控制，持续创造价值，赢得员工、合作伙伴及客户的一致认可。</p>
                     </div>
@@ -65,81 +65,6 @@
                     <div class="main" v-show="index==4">
 <!--                        <p>为了壮大公司实力，提高公司知名度，积极响应政府对高新技术企业的支持，我公司目前正在进行软著、双软企业、CMMI3等一系列的资质认证。目前软著、CMMI3认证已经下证；其它认证也已经拟定好时间表和工作计划表。</p>-->
                         <p>公司已通过国际CMMI3认证、ISO9001认证、ISO27001认证，公共安全业务连续性管理体系认证。</p>
-<!--                        <h4 class="gsrzTitle" style="padding-left: 324px;font-size: 20px;">CMMI3认证</h4>-->
-<!--                        <el-row :gutter="20" class="cmmi">-->
-<!--                            <el-col :span="17">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[6]"-->
-<!--                                            :preview-src-list="srcList" style="margin-left: 150px;">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--&lt;!&ndash;                            <el-col :span="7">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class="cmmiTwo">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <img src="http://images.gshxkj.com.cn/aboutHX/cup.png" alt="">&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </el-col>&ndash;&gt;-->
-<!--                        </el-row>-->
-
-<!--                        <h4 class="gsrzTitle">ISO9001认证</h4>-->
-<!--                        <el-row :gutter="20" class="gsrz">-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[0]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[1]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-
-
-<!--                        </el-row>-->
-<!--                        <h4 class="gsrzTitle" style="margin-top: 10px">ISO27001认证</h4>-->
-<!--                        <el-row :gutter="20" class="gsrz">-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[2]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[3]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[4]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-<!--                            <el-col :span="6">-->
-<!--                                <div>-->
-<!--                                    <el-image-->
-<!--                                            :src="srcList[5]"-->
-<!--                                            :preview-src-list="srcList">-->
-<!--                                    </el-image>-->
-<!--                                </div>-->
-<!--                            </el-col>-->
-
-<!--                        </el-row>-->
-
 
 <!--                        资质展示改为轮播图-->
                         <template>
@@ -147,31 +72,31 @@
                                 <el-carousel-item >
                                     <div class="zizhiL">
                                         <div>
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO90011.jpg" alt="">
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO90012.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO90011.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO90012.jpg" alt="">
                                         </div>
                                     </div>
                                 </el-carousel-item>
                                 <el-carousel-item >
                                     <div class="zizhiL">
                                         <div>
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270011.jpg" alt="">
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270012.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO270011.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO270012.jpg" alt="">
                                         </div>
                                     </div>
                                 </el-carousel-item>
                                 <el-carousel-item >
                                     <div class="zizhiL">
                                         <div>
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270013.jpg" alt="">
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/ISO270014.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO270013.jpg" alt="">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/ISO270014.jpg" alt="">
                                         </div>
                                     </div>
                                 </el-carousel-item>
                                 <el-carousel-item >
                                     <div class="zizhiL">
                                         <div>
-                                            <img src="http://images.gshxkj.com.cn/aboutHX/cmmi.png" alt="" style="width: 100%">
+                                            <img src="http://images.gshxkj.com.cn:8090/aboutHX/cmmi.png" alt="" style="width: 100%">
                                         </div>
                                     </div>
                                 </el-carousel-item>
@@ -183,48 +108,53 @@
                         <el-row class="hzhb" type="flex" justify="center" align="middle" style="flex-wrap: wrap;">
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo1.png" >
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo1.png" style="width: 65%">
                                 </div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo2.png" >
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo2.png" >
                                 </div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo3.png" alt="">
+                                    <img  src="../assets/images/longhang.png" style="width: 76%" alt="">
                                 </div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo4.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo5.png" alt="">
                                 </div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo5.png" alt="">
-                                </div>
-                            </el-col>
-                            <el-col :sm="8">
-                                <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo6.png" alt="">
-                                </div>
-                            </el-col>
-                            <el-col :sm="8">
-                                <div>
-                                    <img src="http://images.gshxkj.com.cn/aboutHX/banklogo7.png"  class="sft">
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo7.png"  class="sft">
                                     <span style="color: #06203E;margin-left: 10px;font-weight: bold">甘肃省司法厅</span>
                                 </div>
                             </el-col>
                             <el-col :sm="8">
-                                <div><img src="../assets/images/bank_logo.jpg" style="width: 70%"  alt=""></div>
+                                <div>
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo4.png" alt="">
+                                </div>
                             </el-col>
                             <el-col :sm="8">
                                 <div>
-                                    <img src="../assets/images/logo.jpg" style="width: 60%" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/aboutHX/banklogo3.png" alt="" style="width: 70%">
                                 </div>
                             </el-col>
+
+                            <el-col :sm="8">
+                                <div><img src="../assets/images/bank_logo.jpg" style="width: 85%"  alt=""></div>
+                            </el-col>
+
+                            <el-col :sm="8">
+                                <div>
+                                    <img style="width: 48%" src="../assets/images/wanwei.png" alt="">
+                                </div>
+                            </el-col>
+
+
+
 
                         </el-row>
                     </div>
@@ -254,19 +184,19 @@
                 msg:'公司简介',
                 height:window.screen.height-200,
                 srcList: [
-                    'http://images.gshxkj.com.cn/aboutHX/ISO90011.png',
-                    'http://images.gshxkj.com.cn/aboutHX/ISO90012.png',
-                    'http://images.gshxkj.com.cn/aboutHX/ISO270011.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/ISO270012.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/ISO270013.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/ISO270014.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx7.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx8.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx9.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx10.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx11.jpg',
-                    // 'http://images.gshxkj.com.cn/aboutHX/hx12.jpg',
-                    'http://images.gshxkj.com.cn/aboutHX/cmmi.png'
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO90011.png',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO90012.png',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO270011.jpg',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO270012.jpg',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO270013.jpg',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/ISO270014.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx7.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx8.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx9.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx10.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx11.jpg',
+                    // 'http://images.gshxkj.com.cn:8090/aboutHX/hx12.jpg',
+                    'http://images.gshxkj.com.cn:8090/aboutHX/cmmi.png'
                 ]
             }
         },
@@ -364,7 +294,7 @@
 
 
     .sft{
-        width: 30%!important;
+        width: 20%!important;
     }
     .cmmi{
         margin-bottom: 50px;
@@ -443,7 +373,7 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");
+        background-image: url("http://images.gshxkj.com.cn:8090/aboutHX/about_bg.png");
         background-repeat: no-repeat;
         background-position: center;
     }

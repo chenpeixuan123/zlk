@@ -10,27 +10,27 @@
         </ul>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner1.jpg');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn:8090/index/banner1.jpg');">
           </div>
         </div>
 <!--        <div class="swiper-slide">-->
-<!--          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner2.jpg');">-->
+<!--          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn:8090/index/banner2.jpg');">-->
 
 <!--          </div>-->
 <!--        </div>-->
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner4.png');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn:8090/index/banner4.png');">
 
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner8.png');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn:8090/index/banner8.png');">
 
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn/index/banner3.png');">
+          <div class="lunBo" style="background-image: url('http://images.gshxkj.com.cn:8090/index/banner3.png');">
           </div>
         </div>
 
@@ -48,7 +48,7 @@
       <el-row>
         <el-col :span="10">
           <div class="cc_left">
-            <img src="http://images.gshxkj.com.cn/index/ywfl_left.png" alt="">
+            <img src="http://images.gshxkj.com.cn:8090/index/ywfl_left.png" alt="">
           </div>
         </el-col>
         <el-col :span="14">
@@ -60,7 +60,7 @@
               <el-col :span="6">
                 <div>
                   <div class="ywfw_every">
-                    <img src="http://images.gshxkj.com.cn/index/ywfw1.png" alt="">
+                    <img src="http://images.gshxkj.com.cn:8090/index/ywfw1.png" alt="">
                   </div>
                   <p>产品及解决方案</p>
                 </div>
@@ -68,7 +68,7 @@
               <el-col :span="6">
                 <div>
                   <div class="ywfw_every">
-                    <img src="http://images.gshxkj.com.cn/index/ywfw2.png" alt="">
+                    <img src="http://images.gshxkj.com.cn:8090/index/ywfw2.png" alt="">
                   </div>
                   <p>智慧司法</p>
                 </div>
@@ -76,7 +76,7 @@
               <el-col :span="6">
                 <div>
                   <div class="ywfw_every">
-                    <img src="http://images.gshxkj.com.cn/index/ywfw3.png" alt="">
+                    <img src="http://images.gshxkj.com.cn:8090/index/ywfw3.png" alt="">
                   </div>
                   <p>系统集成</p>
                 </div>
@@ -84,7 +84,7 @@
               <el-col :span="6">
                 <div>
                   <div class="ywfw_every">
-                    <img src="http://images.gshxkj.com.cn/index/ywfw4.png" alt="" style="width: 110px;">
+                    <img src="http://images.gshxkj.com.cn:8090/index/ywfw4.png" alt="" style="width: 110px;">
                   </div>
                   <p>IT运维服务及其他</p>
                 </div>
@@ -100,7 +100,7 @@
       <div class="content fwwl" v-show="indexLunBo==1" >
             <div>
                 <div class="fwwl_left">
-                    <img src="http://images.gshxkj.com.cn/index/chinaMap.png" alt="">
+                    <img src="http://images.gshxkj.com.cn:8090/index/chinaMap.png" alt="">
                 </div>
                 <div class="fwwl_right">
                     <div>【客户分布图】</div>
@@ -113,7 +113,7 @@
       <div class="content" v-show="indexLunBo==2" style="padding: 40px 0 20px;">
         <el-row :gutter="20" class="mySuccess">
           <el-col :span="6">
-            <div style="background-image: url('http://images.gshxkj.com.cn/index/mySuccess.png')">
+            <div style="background-image: url('http://images.gshxkj.com.cn:8090/index/mySuccess.png')">
               <h6>丰富的行业经验</h6>
               <p>涉及领域广泛，已成功完成众多项目,满足了不同行业IT需求。</p>
             </div>
@@ -131,7 +131,7 @@
             </div>
           </el-col>
           <el-col :span="6">
-            <div style="background-image: url('http://images.gshxkj.com.cn/index/mySuccess.png')">
+            <div style="background-image: url('http://images.gshxkj.com.cn:8090/index/mySuccess.png')">
               <h6>先进的管理理念</h6>
               <p>
                 公司顺应国家发展趋势，紧跟互联网发展步伐，始终以技术为核心，以科技创新为指引,为每位用户提供安全、快捷、高效、实用的专业信息化服务。
@@ -155,6 +155,42 @@
           </div>
           <div>
               <marquee direction="up" behavior="scroll" scrollamount="2"  loop="-1"  height="100%"  hspace="10" vspace="10"  onmouseover="this.stop()" onmouseout="this.start()">
+                  
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:15}}" tag="p">环讯科技中标甘肃银行网络安全服务项目<span>2020-06-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:16}}" tag="p">环讯科技研发预售房交易资金监管平台<span>2020-06-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:9}}" tag="p">学习时报发表评论员文章：为维护人民健康提供有力法治保障<span>2020-06-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:18}}" tag="p">实战 | 便民缴税服务推动金融与民生互联互通<span>2020-06-12</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:19}}" tag="p">李兆云：软件产品质量管理的数字化转型<span>2020-06-12</span></router-link>
+
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:14}}" tag="p">环讯科技正式开通400服务热线<span>2020-05-29</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:8}}" tag="p">特殊时期的全国两会，立起中国笃定前行的路标<span>2020-05-29</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:16}}" tag="p">分布式数据库在金融行业的应用和展望<span>2020-05-29</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:17}}" tag="p">实战 | 银行远程办公创新与实践<span>2020-05-29</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:4,detaiNum:4}}" tag="p">表扬信——致玉门市住宅维修资金数据迁移小组<span>2020-05-22</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:7}}" tag="p">政府工作报告 ——2020年5月22日在第十三届全国人民代表大会第三次会议上<span>2020-05-22</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:14}}" tag="p">观点 |​ 建立中国金融业软件测试标准的探索<span>2020-05-22</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:15}}" tag="p">实战 | 移动云测试平台建设的实践与展望<span>2020-05-22</span></router-link>
+
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:12}}" tag="p">赵克斌副总经理赴庆阳推进住宅维修资金项目<span>2020-05-15</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:6}}" tag="p">兰州高新区召开党工委（扩大）会议传达学习党中央和省、市有关会议精神安排高新区贯彻落实工作<span>2020-05-15</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:12}}" tag="p">【交通银行线上金融业务中心总裁 李豪】打造有温度的“零接触”金融服务<span>2020-05-15</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:13}}" tag="p">思想汇 | 金融科技的光荣与梦想<span>2020-05-15</span></router-link>
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:11}}" tag="p">环讯科技与建设银行共同建设长庆油田职工食堂电子缴费系统<span>2020-04-27</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:5}}" tag="p">确保人民群众在国家治理中的主体地位<span>2020-04-27</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:2,detaiNum:11}}" tag="p">央行科技司李伟：落实发展规划 推动金融科技惠民利企<span>2020-04-27</span></router-link>
+
+
+
+                  <router-link :to="{ path: '/news',query:{num:3,detaiNum:10}}" tag="p">环讯科技与农业银行签订技术服务协议，联合建设住宅维修资金云管理平台<span>2020-04-20</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:4,detaiNum:3}}" tag="p">表扬信<span>2020-04-20</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:3}}" tag="p">科学精准施策确保疫情防控和经济社会发展双胜利<span>2020-04-20</span></router-link>
+                  <router-link :to="{ path: '/news',query:{num:1,detaiNum:4}}" tag="p">脱离业务模型的基础架构没有灵魂，金融行业IT双模建设我们该如何应对？ | 2020年度策划<span>2020-04-20</span></router-link>
+
+
                   <router-link :to="{ path: '/news',query:{num:3,detaiNum:9}}" tag="p">润通集团调研环讯科技取得圆满成功<span>2020-04-12</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:1,detaiNum:2}}" tag="p">中国疫情防控彰显党的体制优势<span>2020-04-12</span></router-link>
                   <router-link :to="{ path: '/news',query:{num:2,detaiNum:10}}" tag="p">观点 | 区块链技术对商业银行的影响分析及启示<span>2020-04-12</span></router-link>
@@ -257,12 +293,10 @@ export default {
   }
   .news{
       width:1196px;
-      margin: 0 auto;
+      margin: 0 auto 51px;
       display: flex;
-      margin-bottom: 51px;
-      border-top: 1px solid rgba(195,195,195,.8);
       height: 143px;
-      box-shadow:0px 3px 3px 0px rgba(40,72,105,0.2);
+      box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
       div{
           box-sizing: border-box;
           display: flex;
@@ -361,7 +395,7 @@ export default {
     }
   }
 .fwwl{
-    background-image: url("http://images.gshxkj.com.cn/index/fwwl_bg.png");
+    background-image: url("http://images.gshxkj.com.cn:8090/index/fwwl_bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding:10px 0;
@@ -553,7 +587,7 @@ export default {
     height: 36px;
     margin: 0 auto;
     text-align: center;
-    background-image: url(http://images.gshxkj.com.cn/index/icon4@2x.png);
+    background-image: url(http://images.gshxkj.com.cn:8090/index/icon4@2x.png);
     background-size: 100% 20%;
     background-repeat: no-repeat;
     background-position-y: bottom;

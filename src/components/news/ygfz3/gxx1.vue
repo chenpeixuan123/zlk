@@ -1,7 +1,7 @@
 <template>
     <div >
         <div class="gxx">
-            <img src="http://images.gshxkj.com.cn/news/tszs/gxx.png" alt="">
+            <img src="http://images.gshxkj.com.cn:8090/news/tszs/gxx.png" alt="">
         </div>
         <p class="next" @click="toParent">下一篇：勇于突破，开拓进取，积极投身于甘肃省信息化建设</p>
     </div>

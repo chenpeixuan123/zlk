@@ -7,17 +7,17 @@
                     <el-carousel class="first_lunbo" :interval="3000" type="card" height="300px" indicator-position="none">
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/pc_ksh1.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/pc_ksh1.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/pc_keh2.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/pc_keh2.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/pc_ksh3.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/pc_ksh3.png" alt="">
                             </div>
                         </el-carousel-item>
                     </el-carousel>
@@ -36,32 +36,32 @@
 
         <div class="YDproduct">
             <div>
-                <img src="http://images.gshxkj.com.cn/product/ksh/yd_bg.png" alt="" class="yg_bg">
+                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_bg.png" alt="" class="yg_bg">
                 <template>
                     <el-carousel class="first_lunbo" :interval="3000" type="card" height="300px" indicator-position="none">
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/yd_ksh1.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_ksh1.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/yd_ksh2.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_ksh2.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/yd_ksh3.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_ksh3.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/yd_ksh4.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_ksh4.png" alt="">
                             </div>
                         </el-carousel-item>
                         <el-carousel-item >
                             <div>
-                                <img src="http://images.gshxkj.com.cn/product/ksh/yd_ksh5.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/product/ksh/yd_ksh5.png" alt="">
                             </div>
                         </el-carousel-item>
 

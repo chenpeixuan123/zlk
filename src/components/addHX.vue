@@ -2,7 +2,7 @@
     <div>
         <!--    展示轮播图-->
         <div class="lunBo" ref="element">
-<!--            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" alt="">-->
+<!--            <img src="http://images.gshxkj.com.cn:8090/aboutHX/about_bg.png" alt="">-->
         </div>
 
         <div class="content">
@@ -24,7 +24,7 @@
                 <el-col :span="17">
                     <el-row type="flex" align="middle" style="margin-bottom: 40px;" v-show="index!=0">
                         <el-col :sm="12">
-                            <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
+                            <span class="title"><img src="http://images.gshxkj.com.cn:8090/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
                             <p class="title_right">当前位置：首页 > 加入环讯 > {{msg}}</p>
@@ -44,34 +44,34 @@
                             <div>
                                 <span style="transform: rotate(-30deg);"></span>
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/addHX/icon14.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/addHX/icon14.png" alt="">
                                 </div>
                                 <p>充分的基本保障</p>
                             </div>
                             <div style="position: relative;top: -70px;">
                                 <span style="transform: rotate(30deg);top: 70px;"></span>
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/addHX/icon15.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/addHX/icon15.png" alt="">
                                 </div>
                                 <p>员工关怀</p>
                             </div>
                             <div>
                                 <span style="transform: rotate(-30deg);"></span>
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/addHX/icon16.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/addHX/icon16.png" alt="">
                                 </div>
                                 <p>带薪假期</p>
                             </div>
                             <div style="position: relative;top: -70px;">
                                 <span style="transform: rotate(30deg);top: 70px;"></span>
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/addHX/icon17.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/addHX/icon17.png" alt="">
                                 </div>
                                 <p>各类补助</p>
                             </div>
                             <div>
                                 <div>
-                                    <img src="http://images.gshxkj.com.cn/addHX/icon18.png" alt="">
+                                    <img src="http://images.gshxkj.com.cn:8090/addHX/icon18.png" alt="">
                                 </div>
                                 <p>健康关怀</p>
                             </div>
@@ -79,14 +79,14 @@
                         <h2>员工发展</h2>
                         <el-row class="ygfz" :gutter="20" type="flex" style="flex-wrap: wrap;">
                             <el-col :sm="12">
-                                <img src="http://images.gshxkj.com.cn/addHX/jion_pic1.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/jion_pic1.png" alt="">
                                 <div class="ygfz_bottom">
                                     <h3>【完善的培训体系】</h3>
                                     <p>涵盖了不同群体的不同培训项目，新员工培养、在职员工培养、新任经理培养、梯队人才培养、业务领军人才培养等，帮助员工职业生涯的规划与发展。</p>
                                 </div>
                             </el-col>
                             <el-col :sm="12">
-                                <img src="http://images.gshxkj.com.cn/addHX/jion_pic2.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/jion_pic2.png" alt="">
                                 <div class="ygfz_bottom">
                                     <h3>【融洽的工作氛围】</h3>
                                     <p>团结互助的同事关系、自由和谐的工作环境，人性化的管理，弹性的工作时间，能让员工快速融入并为之奋斗。</p>
@@ -95,14 +95,14 @@
 
                             <el-col :sm="12">
 
-                                <img src="http://images.gshxkj.com.cn/addHX/jion_pic3.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/jion_pic3.png" alt="">
                                 <div class="ygfz_bottom">
                                     <h3>【良好的沟通与诉求机制】</h3>
                                     <p>公平、公正、公开的沟通环境，公司拥有自己的内网、微信群和公众号，有效满足员工意愿的表达。</p>
                                 </div>
                             </el-col>
                             <el-col :sm="12">
-                                <img src="http://images.gshxkj.com.cn/addHX/jion_pic4.png" alt="">
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/jion_pic4.png" alt="">
                                 <div class="ygfz_bottom">
                                     <h3>【公平透明的职业发展通道】</h3>
                                     <p>关注员工的职业发展，公司设计了专业和管理双通道发展体系，使得从事不同工作的员工可以根据工作需要、能力、兴趣和意愿，在个人职业发展上有可持续发展的职业空间。</p>
@@ -114,7 +114,7 @@
                     <div class="main2" v-show="index==2">
                        <div class="main2_content">
                            <div class="main2_left">
-                               <img src="http://images.gshxkj.com.cn/addHX/6.png" >
+                               <img src="http://images.gshxkj.com.cn:8090/addHX/6.png" >
                            </div>
                            <div class="main2_right">
                                <h2><span>人才理念</span></h2>
@@ -423,7 +423,7 @@
                     <div class="main2" v-show="index==3">
                         <div class="main2_content">
                             <div class="main2_left">
-                                <img src="http://images.gshxkj.com.cn/addHX/6.png" >
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/6.png" >
                             </div>
                             <div class="main2_right">
                                 <h2><span>人才理念</span></h2>
@@ -482,7 +482,7 @@
                     <div class="main2" v-show="index==4">
                         <div class="main2_content">
                             <div class="main2_left">
-                                <img src="http://images.gshxkj.com.cn/addHX/6.png" >
+                                <img src="http://images.gshxkj.com.cn:8090/addHX/6.png" >
                             </div>
                             <div class="main2_right">
                                 <h2><span>人才理念</span></h2>
@@ -826,7 +826,7 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        background-image: url("http://images.gshxkj.com.cn/index/banner5.png");
+        background-image: url("http://images.gshxkj.com.cn:8090/index/banner5.png");
         background-repeat: no-repeat;
         background-position: center ;
     }

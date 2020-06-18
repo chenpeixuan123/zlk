@@ -2,7 +2,7 @@
     <div>
         <!--    展示轮播图-->
         <div class="lunBo" ref="element">
-<!--            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" alt="">-->
+<!--            <img src="http://images.gshxkj.com.cn:8090/aboutHX/about_bg.png" alt="">-->
             <el-carousel height="407px">
                 <el-carousel-item >
                     <div class="lunboImg bg1" >
@@ -53,7 +53,7 @@
                 <el-col :span="17" >
                     <el-row type="flex" align="middle" style="border-bottom: 1px solid #CCCCCC;">
                         <el-col :sm="12">
-                            <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
+                            <span class="title"><img src="http://images.gshxkj.com.cn:8090/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
                             <p class="title_right">当前位置：首页 > 环讯业务 > {{msg}}</p>
@@ -64,31 +64,31 @@
                     <div class="main" v-show="index==1">
                         <el-row type="flex" :gutter="20" class="cshy">
                             <el-col :span="5" :xs="{span:12}">
-                                <div style="background-image: url('http://images.gshxkj.com.cn/product/bg15.png')">
+                                <div style="background-image: url('http://images.gshxkj.com.cn:8090/product/bg15.png')">
                                     <h2>1</h2>
                                     <p>司法行业</p>
                                 </div>
                             </el-col>
                             <el-col :span="5" :xs="{span:12}">
-                                <div style="background-image: url('http://images.gshxkj.com.cn/product/bg15.png')">
+                                <div style="background-image: url('http://images.gshxkj.com.cn:8090/product/bg15.png')">
                                     <h2>2</h2>
                                     <p>银行行业</p>
                                 </div>
                             </el-col>
                             <el-col :span="5" :xs="{span:12}">
-                                <div style="background-image: url('http://images.gshxkj.com.cn/product/bg15.png')">
+                                <div style="background-image: url('http://images.gshxkj.com.cn:8090/product/bg15.png')">
                                     <h2>3</h2>
                                     <p>政府行业</p>
                                 </div>
                             </el-col>
                             <el-col :span="5" :xs="{span:12}">
-                                <div style="background-image: url('http://images.gshxkj.com.cn/product/bg15.png')">
+                                <div style="background-image: url('http://images.gshxkj.com.cn:8090/product/bg15.png')">
                                     <h2>4</h2>
                                     <p>系统集成与应用</p>
                                 </div>
                             </el-col>
                             <el-col :span="5" :xs="{span:12}">
-                                <div style="background-image: url('http://images.gshxkj.com.cn/product/bg15.png')">
+                                <div style="background-image: url('http://images.gshxkj.com.cn:8090/product/bg15.png')">
                                     <h2>5</h2>
                                     <p>网络工程技术与服务</p>
                                 </div>
@@ -103,7 +103,7 @@
                                 满意度为唯一标准，从而实现客户与公司共赢的发展目标。目前我公司具有大量成功案例，在使用过程中，获得客户的 <span style="font-size: 22px;color: #F0B71D;font-style: oblique;">一致好评。</span>
                             </p>
                             <div style="width: 85%;">
-                                <img src="http://images.gshxkj.com.cn/product/hzgy.png" alt="" style="width: 591px;margin: 0 auto;display: block;margin-top: 68px;">
+                                <img src="http://images.gshxkj.com.cn:8090/product/hzgy.png" alt="" style="width: 591px;margin: 0 auto;display: block;margin-top: 68px;">
                             </div>
                         </div>
                         <div v-show="indexSuccess==1">
@@ -111,25 +111,25 @@
                         </div>
                         <div v-show="indexSuccess==2">
                             <h3>薪酬管理系统</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list2.jpg" alt="">
+                            <img src="http://images.gshxkj.com.cn:8090/product/list2.jpg" alt="">
                             <p>基于银行薪酬管理业务的现状和痛点，甘肃环讯定制化开发薪酬管理系统。主要功能包括：组织机构管理、人事管理、考勤管理、审批中心(基于Activity工作流)、自动算薪、BI数据报表及分析、个性化薪资核算配置等，为客户提供了方便、准确、稳定的HR工作平台。</p>
                         </div>
                         <div v-show="indexSuccess==3">
                             <h3>住宅维修资金云管理平台 </h3>
-                            <img src="http://images.gshxkj.com.cn/product/list9.png" alt="">
+                            <img src="http://images.gshxkj.com.cn:8090/product/list9.png" alt="">
                             <p>
                                 针对我省各级房管局单位住宅维修资金管理现状，根据政府出台的住宅维修资金管理制度，结合银行专业、规范的账务处理机制，甘肃环讯研发推出住房维修资金管理云平台。该平台接入房管局、业主、开发商及物业公司等多应用场景，采用金融IT业先进的F5集群技术，为用户提供持续、快速、稳定的线上服务，为维修资金管理提供清晰、简洁的财务数据、丰富的统计报表，规范并简化维修资金的管理流程，从而既保障业主的计息权益，又大大提高了工作效率。
                             </p>
                         </div>
                         <div v-show="indexSuccess==4">
                             <h3>“惠民”云服务平台</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list3.jpg" alt="">
+                            <img src="http://images.gshxkj.com.cn:8090/product/list3.jpg" alt="">
                             <p>经调研，现阶段广大居民普遍存在生活缴费难、管理难问题。以便民、惠民为服务宗旨，甘肃环讯推出“惠民”云服务平台。收费单位可通过该平台实现对所有缴费用户统一管理，对收缴 情况一目了然。
                                 该平台加入了shiro权限框架，以防止多角色、多用户都越权问题；采用https协议保证数据安全性，通过互联网支付完成二级清分。该平台具有开放性、便捷性、延展性，能快速融入百姓日常生活，为群众提供定制化、差异化、个性化服务。广大居民可通过“惠民”云服务平台足不出户轻松缴费。</p>
                         </div>
                         <div v-show="indexSuccess==5">
                             <h3>陇银资本互联网平台</h3>
-                            <img src="http://images.gshxkj.com.cn/product/list2.png" alt="">
+                            <img src="http://images.gshxkj.com.cn:8090/product/list2.png" alt="">
                             <p>
                                 该平台是甘肃环讯给甘肃陇银资本管理有限公司(简称“陇银资本”)提供的一套数据统计及展示平台。该产品可实现车险分期产品的存量客户交叉导流及自身渠道的客户新增。
                                 该平台实现了对用户、部门以及对应权限的管理和配置;通过ODS获取数据，对客户信息及还款计划的管理、报表展示;财务清算功能实现客户短信预警、财务人员短信预警、返佣明细、垫付明细管理;贷款管理功能实现对客户信息、还款记录、放款记录、逾期还款、还款计划的展示、预警、数据更新。该平台还可实现退保、个人信息维护、公共参数配置、地区信息配置及操作日志记录等功能。
@@ -305,13 +305,13 @@
     }
 }
 .bg1{
-    background-image: url('http://images.gshxkj.com.cn/product/pro1.jpg');
+    background-image: url('http://images.gshxkj.com.cn:8090/product/pro1.jpg');
 }
 .bg2{
-    background-image: url('http://images.gshxkj.com.cn/product/pro2.jpg');
+    background-image: url('http://images.gshxkj.com.cn:8090/product/pro2.jpg');
 }
 .bg3{
-    background-image: url('http://images.gshxkj.com.cn/product/pro3.jpg');
+    background-image: url('http://images.gshxkj.com.cn:8090/product/pro3.jpg');
 }
     .success{
         &>div{

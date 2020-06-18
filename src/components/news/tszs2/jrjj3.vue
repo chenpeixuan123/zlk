@@ -5,7 +5,7 @@
             <p>发布时间：  2020-03-01     16:50:18</p>
         </div>
         <div class="main_news">
-            <img src="http://images.gshxkj.com.cn/news/tszs/zzlx.png" style="width: 40%">
+            <img src="http://images.gshxkj.com.cn:8090/news/tszs/zzlx.png" style="width: 40%">
             <p class="image_describe">中国农业银行科技与产品管理局负责人  蔡钊</p>
             <p>变革、创新、转型是2019年金融业的主题词。面对新一轮技术革命所引发的金融海啸，各金融同业纷纷借助大数据、区块链、人工智能、云计算等前沿技术，奋起直追，融入激烈的市场竞争，推动银行经营管理转型发展。作为国有大型商业银行，农业银行迎难而上，以开放的心态积极应对激烈的市场竞争，坚持金融科技自主创新，识别新赛道、布局新技术。</p>
             <p class="new_title">强本固基，以战略定力推进自主创新</p>

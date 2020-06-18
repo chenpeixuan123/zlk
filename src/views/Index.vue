@@ -4,7 +4,7 @@
       <div class="content">
         <el-row>
           <el-col :span="4">
-            <img src="http://images.gshxkj.com.cn/index/hx_logo.png" alt="">
+            <img src="http://images.gshxkj.com.cn:8090/index/hx_logo.png" alt="">
           </el-col>
           <el-col :span="20" >
             <ul>
@@ -46,12 +46,12 @@
           <el-col :xs="24" :sm="10" >
             <h2>联系我们</h2>
 
-            <p @click="toAddress"><img src="http://images.gshxkj.com.cn/index/icon6.png" alt="" class="img_botton" ><span>地址:兰州市城关高新区南河北路高新大厦B座21A</span></p>
-            <p><img src="http://images.gshxkj.com.cn/index/icon7.png" alt="" class="img_botton"><span>电话:17361617371</span></p>
-            <p><img src="http://images.gshxkj.com.cn/index/icon8.png" alt="" class="img_botton"><span>邮箱:huanxunkeji@gshxkj.com.cn</span></p>
+            <p @click="toAddress"><img src="http://images.gshxkj.com.cn:8090/index/icon6.png" alt="" class="img_botton" ><span>地址:兰州市城关高新区南河北路高新大厦B座21A</span></p>
+            <p><img src="http://images.gshxkj.com.cn:8090/index/icon7.png" alt="" class="img_botton"><span>电话:17361617371</span></p>
+            <p><img src="http://images.gshxkj.com.cn:8090/index/icon8.png" alt="" class="img_botton"><span>邮箱:huanxunkeji@gshxkj.com.cn</span></p>
           </el-col>
           <el-col :xs="24" :sm="6" style="margin: 0 auto;text-align: center;">
-            <img src="http://images.gshxkj.com.cn/index/code.png" alt="">
+            <img src="http://images.gshxkj.com.cn:8090/index/code.png" alt="">
             <p style="font-size: 12px;">关注微信公众号</p>
           </el-col>
         </el-row>

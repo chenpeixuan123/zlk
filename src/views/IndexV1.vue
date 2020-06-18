@@ -7,8 +7,8 @@
             <div class="content" style="height: 70px;">
                 <el-row>
                     <el-col :span="4" style="height: 60px;">
-                        <img src="http://images.gshxkj.com.cn/index/topbj.png" alt="">
-                        <img src="http://images.gshxkj.com.cn/index/logo.png" alt="">
+                        <img src="http://images.gshxkj.com.cn:8090/index/topbj.png" alt="">
+                        <img src="http://images.gshxkj.com.cn:8090/index/logo.png" alt="">
                     </el-col>
                     <el-col :span="20" >
                         <ul class="headerTab">

@@ -2,7 +2,7 @@
     <div>
         <!--    展示轮播图-->
         <div class="lunBo" ref="element">
-<!--            <img src="http://images.gshxkj.com.cn/aboutHX/about_bg.png" alt="">-->
+<!--            <img src="http://images.gshxkj.com.cn:8090/aboutHX/about_bg.png" alt="">-->
         </div>
 
         <div class="content">
@@ -20,7 +20,7 @@
                 <el-col :span="17">
                     <el-row type="flex" align="middle" style="margin-bottom: 40px;">
                         <el-col :sm="12">
-                            <span class="title"><img src="http://images.gshxkj.com.cn/aboutHX/icon11.png" alt="">{{msg}}</span>
+                            <span class="title"><img src="http://images.gshxkj.com.cn:8090/aboutHX/icon11.png" alt="">{{msg}}</span>
                         </el-col>
                         <el-col :sm="12">
                             <p class="title_right">当前位置：首页 > 联系我们 > {{msg}}</p>
@@ -34,7 +34,7 @@
                             <el-row class="concat_list" :gutter="20">
                                 <el-col :span="8">
                                     <div>
-                                        <img src="http://images.gshxkj.com.cn/concat/h1.png" alt="">
+                                        <img src="http://images.gshxkj.com.cn:8090/concat/h1.png" alt="">
                                         <h2>公司地址</h2>
                                         <p>甘肃省兰州市城关高新区南河北路高新大厦B座21A</p>
                                         <div>
@@ -44,7 +44,7 @@
                                 </el-col>
                                 <el-col :span="8">
                                     <div>
-                                        <img src="http://images.gshxkj.com.cn/concat/h2.png" alt="">
+                                        <img src="http://images.gshxkj.com.cn:8090/concat/h2.png" alt="">
                                         <h2 style="color: #996633;">联系电话</h2>
                                         <p>王女士</p>
                                         <p>0931-8121096</p>
@@ -55,7 +55,7 @@
                                 </el-col>
                                 <el-col :span="8">
                                     <div>
-                                        <img src="http://images.gshxkj.com.cn/concat/h3.png" alt="">
+                                        <img src="http://images.gshxkj.com.cn:8090/concat/h3.png" alt="">
                                         <h2 style="color: #006666;">邮箱</h2>
                                         <p>huanxunkeji@gshxkj.com.cn</p>
                                         <p style="opacity: 0">dsdf</p>
@@ -454,7 +454,7 @@
     .lunBo{
         height: 392px;
         margin: 0 auto;
-        /*background-image: url("http://images.gshxkj.com.cn/aboutHX/about_bg.png");*/
+        /*background-image: url("http://images.gshxkj.com.cn:8090/aboutHX/about_bg.png");*/
         background-image: url("../assets/images/content.jpg");
         background-repeat: no-repeat;
         background-position: center -15px;
